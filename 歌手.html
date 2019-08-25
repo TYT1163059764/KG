@@ -1,0 +1,1123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全部歌手_歌手_乐库频道_酷狗网</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}	
+	li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	#head{
+		width: 1000px;
+		height: 78px;
+		margin: 0 auto;
+		position: relative;
+		
+	}
+	#head .logo{
+		width: 153px;
+		height: 37px;
+		float: left;
+		margin-top: 20px;
+	}
+	#head .search{
+		width: 300px;
+   		height: 36px;
+    	margin-left: 193px;
+    	padding-top: 20px;
+		
+	}
+	#head .search_input{
+		width: 298px;
+    	height: 34px;
+    	border: 1px solid #ccc;
+    	line-height: 34px;
+		position: relative;
+		z-index: 100;
+	}
+	
+	.search_input input{
+		width: 249px;
+    	height: 24px;
+    	line-height: 24px;
+		margin-left: 14px;
+    	padding: 5px 0;
+   	 	color: #666;
+		border: none;
+		font-size: 13px;
+		position: absolute;
+    	left: 0;
+    	top: 0;
+		outline: none; /*边框按下去没有颜色*/
+		
+	}
+	#head .search_btn{
+		width: 34px;
+		height: 34px;
+		float: right;
+		right: 10px;
+    	top:10px;
+	}
+	#head .search_icon{
+		background: url(images/search.png);
+		background-position: -40px -56px;
+		width: 16px;
+		height: 16px;
+		right: 10px;
+    	top:10px;
+		position: absolute;
+		cursor: pointer;
+	}
+	#head .search_icon:hover{
+		background: url(images/search.png);
+		background-position: -40px -86px;
+		width: 16px;
+		height: 16px;
+		right: 10px;
+    	top:10px;
+		position: absolute;
+	}
+	#head .head_right{
+		width: 402px;
+		float: right;
+		height: 25px;
+		margin-top: -25px;
+		
+	}
+	.head_right ul{
+		width: 240px;
+		border-right: 1px solid #e6e6e6;
+		padding-right: 11px;
+        text-align: right;
+		float: left;
+		
+	}
+	.head_right ul li{
+		list-style: none;
+		float: left;
+		padding-left: 20px;
+	}
+	.head_right ul li a{
+		text-decoration: none;
+		color: #777;
+		font-size: 13px;
+	}
+	.head_right ul li a:hover{
+		color: #169af3;
+	}
+	#head .loading{
+		width: 110px;
+		height: 30px;
+		position: absolute;
+		right: 0;
+		top:25px;
+	}
+	.loading .login {
+		width: 48px;
+		height: 28px;
+		line-height: 28px;
+		border: 1px solid #169af3;
+		border-radius: 2px;
+		text-align: center;
+		background-color: #169af3;
+		float: left;
+		
+	}
+	
+	.loading .regin{
+		width: 48px;
+		height: 28px;
+		line-height: 28px;
+		border: 1px solid #dbdbdb;
+		border-radius: 2px;
+		text-align: center;
+		color: black;
+		text-decoration: none;
+		float:right;
+	}
+	.loading .login:hover{
+		background-color: #158fe1;
+	}
+	.loading .regin:hover{
+		border: 1px solid #169af3;
+		
+		}
+	.loading .regin a{
+		color:black;
+	}
+	.loading .regin:hover{
+		color: #169af3;
+	}
+	.loading a{
+		text-decoration: none;
+		font-size: 13px;
+	}
+	
+	/*首页榜单*/
+	#navWrap{
+		width: 100%;
+		height: 55px;
+		background:#2c323b;
+		position: relative;
+	}
+	#navWrap .nav{
+		width: 1000px;
+		margin: 0 auto;
+		
+			
+	}
+	#navWrap li{
+		float: left;
+		list-style: none;
+	}
+	#navWrap a{
+		text-decoration: none;
+	}
+	.nav .homeNav{
+		width: 437px;
+		height: 55px;
+		float: left;
+		position: relative;
+	}
+	.homeNav .normal active{
+		background-color: #0c8ed9;
+        color: #fff;
+	}
+	.homeNav a{
+		font-size: 16px;
+    	color: #ddd;
+		display:block;
+		
+	}
+	.homeNav  li:hover a{
+		color: white;
+	}
+	.homeNav li{
+		text-align: center;
+		line-height: 55px;
+		display:inline-block;
+	}
+	.homeNav li:hover{
+		
+        background-color: #0c8ed9;
+	}
+		
+	
+	.homeNav .more a{
+		background:url(images/arrowMored.png) no-repeat;
+	    margin-left: 5px;
+    	padding: 0 30px;
+		margin-right: 5px;
+		background-position: 72px 8px;
+		display: inline;
+	}
+	.homeNav .more:hover a{
+		background:url(images/arrowMoreu.png)no-repeat;
+	    background-position: 70px 8px;
+        background-color: #0c8ed9;
+		
+	}
+	 .secondMenu{
+		position: absolute;
+		left: 500px;
+		top: 55px;
+		display: none;
+		width: 113px;
+		height: 146px;
+		background-color: #252a32;
+		z-index: 99;
+	
+		}
+	.secondMenu li{
+		display:block;
+		padding: 0;
+		height: 36px;
+		line-height: 36px;
+		float: none;
+		margin: 0;
+		width: 113px;
+		text-align: center;
+		cursor: pointer;
+	}
+	.secondMenu li:hover{
+		background-color: #2d343d;
+		border-top: 1px solid #383d44;
+
+	}
+		.secondMenu a{
+		text-align: center;
+		font-size: 15px;
+		color: #bbb;
+		background: 0 0;
+		background-color: #252b34;
+		display: block;
+	}
+	.secondMenu li:hover a{
+		color: #fff;
+		background-color: #2d343d;
+	}
+	
+	.subNav {
+		width: 445.44px;
+		float:right;
+		margin-top: 16px;
+    	height: 35px;
+		
+	}
+	.subNav li{
+		margin-left: 30px;
+		list-style: none;
+	}
+	.subNav a.icon-nav1{
+		background-position: 0 -119px;
+	}
+	.subNav a.icon-nav1:hover{
+		background-position: 0 -101px;
+	}
+	.subNav a.icon-nav2{
+		background-position:0 -155px;
+	}
+	.subNav a.icon-nav2:hover{
+		background-position:0 -137px;
+	}
+	.subNav a.icon-nav3{
+		background-position:0 -191px;
+	}
+	.subNav a.icon-nav3:hover{
+		background-position:0 -173px;
+	}
+	.subNav a.icon-nav4{
+		background-position:0 -226px;
+	}
+	.subNav a.icon-nav4:hover{
+		background-position:0 -208px;
+	}
+	.subNav a.icon-nav5{
+		background-position:0 -281px;
+	}
+	.subNav a.icon-nav5:hover{
+		background-position:0 -245px;
+	}
+	.subNav a{
+		background: url(images/sprite.png);
+		padding-left: 20px;
+		color: #bbb;
+    	font-size: 13px;
+	}
+	.subNav a:hover{
+		color: #14a9ff;
+		background: url(images/sprite.png);
+	}
+	#singers{
+		width: 1000px;
+		height: 591px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#singers .allSingers{
+		width:199px;
+		height: 481px;
+		float: left;
+		margin-top: 20px;
+	}
+	.allSingers ul{
+		color: #2a2a2a;
+		margin-bottom: 42px;
+	}
+	.allSingers1 .all{
+		background:#85d2f2!important;
+		
+	}
+	.allSingers1 .all a{
+		color: white;
+	}
+	.allSingers a{
+		display: inline-block;
+		color: #555;
+		height: 30px;
+		line-height: 30px;
+		width: 131px;
+		font-size: 14px;
+		padding: 0 0 0 68px;
+		
+	}
+	.allSingers a:hover{
+		background-color: #85d4f3;
+    	color: #fff;
+	}
+	#singers .right{
+		width: 781px;
+		height: 571px;
+		padding-left: 10px;
+		margin-left: 9px;
+		border-left: 1px solid #e5e5e5;
+		float:right;
+		margin-top: 20px;
+		position: relative;
+	}
+	.right .singer_name1{
+		float: left;
+		margin-bottom: 20px;
+	}
+	.right .hotList{
+		border-bottom: 1px solid #d4d4d4;
+		padding: 0 0 10px;
+		margin-bottom: 10px;
+		height: 24px;
+	}
+	.hotList .figure{
+		color: #303030;
+		font-family: Arial;
+		float: left;
+		height: 24px;
+		line-height: 24px;
+		clear: both;
+		}
+	.hotList .hot{
+		background: #85d4f3;
+		color: #fff;
+		text-align: center;
+	}
+	.figure a{
+		display: inline-block;
+		padding: 0 5px;
+		margin-right: 1px;
+		color: #333;
+		font-size: 15px;
+		font-family: '微软雅黑';
+		
+	}
+	.figure a:hover{
+		background: #85d4f3;
+		color: #fff;
+		text-align: center;
+	}
+	
+	.figure .qt{
+		margin-left: 5px;
+	}
+	.right .singer_pic{
+		height: 240px;
+		margin-bottom: 20px;
+	}
+	.singer_pic li{
+		margin: 0 11px 17px 0;
+    	width: 75px;
+		list-style: none;
+		float: left;
+	}
+	.singer_pic .pic{
+		display: block;
+		height: 80px;
+		background: url(images/other.png) -82px -152px no-repeat;
+		padding: 3px 0px 0px 4px;
+		position: relative;
+	}
+	.singer_pic .pic:hover{
+		background: url(images/other.png) -3px -152px no-repeat;
+		padding: 3px 0px 0px 4px;
+		display: block;
+		height: 80px;
+		position: relative;
+	}
+	.singer_pic img{
+		width: 68px;
+		height: 68px;
+		
+	}
+	
+	.singer_pic strong{
+		width: 70px;
+		font-size: 14px;
+		font-weight: 400;
+		display: block;
+		padding-left: 2px;
+		height: 20px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		margin: 0px;
+		overflow: hidden;
+		text-align: center;
+
+	}
+	.singer_pic i{
+		display: block;
+		color: rgb(255, 255, 255);
+		position: absolute;
+		top: 49px;
+		left: 4px;
+		width: 63px;
+		height: 22px;
+		padding-left: 5px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.singer_pic em{
+		font-style: italic;
+		font-size: 12px;
+	}
+	.right .singer_name{
+		width: 770px;
+		clear: both;
+	}
+	.singer_name .singer_name1{
+		width: 192px;
+		height:96px;
+		float: left;
+		margin-bottom: 20px;
+		
+	}
+	.singer_name1 li{
+		display: block;
+		height: 23px;
+		line-height: 23px;
+		padding-left: 5px;
+		vertical-align: bottom;
+		width: 179px;
+		margin: 0 8px 0 0;
+		
+	}
+	.right .odd{
+		background: #e7e7e7;
+		color: #000;
+		font-size: 14px;
+		float: left;
+	}
+	.right .rank{
+		margin-right: 10px;
+		font-size: 13px;
+		float: left;
+	}
+	.right .up{
+		background: url(images/other.png) no-repeat -374px 2px;
+		width: 10px;
+		height: 20px;
+		float: left;
+	}
+		.odd .up{
+		background: url(images/other.png) no-repeat -333px -205px;
+		width: 10px;
+		height: 20px;
+		float: left;
+	}
+	
+	.right .down{
+		background: url(images/other.png) no-repeat -390px 3px;
+		width: 10px;
+		height: 20px;
+		float: left;
+	}
+	.odd .down{
+		background: url(images/other.png) no-repeat -349px -205px;
+		width: 10px;
+		height: 20px;
+		float: left;
+	}
+	.right .normal{
+		background: url(images/other.png) no-repeat -404px 2px;
+		width: 10px;
+		height: 20px;
+		float:left;
+		
+	}
+	.odd .normal{
+		background: url(images/other.png) no-repeat -363px -205px;
+		width: 10px;
+		height: 20px;
+		float:left;
+		
+	}
+	.right .text{
+		margin-left: 10px;
+		display: inline;
+		width: 122px;
+		height: 24px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		color: #000;
+		font-size: 14px;
+		float: left;
+	}
+	.right.text:hover{
+		text-decoration: underline;
+	}
+	.right .nextPage{
+		margin: 0;
+		position: absolute;
+		top: 535px;
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		color: black;
+	}
+	.nextPage .current{
+		font-weight: 700;
+		font-style: italic;
+		border-bottom: 1px solid #c5c5c5;
+		margin: 0 8px;
+	}
+	.nextPage a{
+		font-style: italic;
+		padding: 0 5px;
+		border-bottom: 1px solid snow;
+		margin: 0 3px;
+		color: black;
+	}
+	.nextPage a:hover{
+		font-weight: bold;
+	}
+	.NextPageSpan a:hover{
+		font-weight: normal;
+	}
+	.nextPage .btnPage{
+		font-style: normal;
+		font-size: 12px;
+		font-family: '微软雅黑';
+	}
+	.nextPage .btnPage:hover{
+		font-weight: normal;
+	}
+	/*底部*/
+	#bottom{
+		width: 100%;
+		height: 319px;
+		background: #2c323b;
+		
+	}
+	#bottom .footer{
+		padding-bottom: 50px;
+	}
+	.footer .links{
+		position: relative;
+		border-bottom: 1px solid #3d424a;
+		padding: 15px 0;
+		font-size: 12px;
+		color: #b1b3b9;
+		text-align: center;
+		height: 20px;
+	}
+	.footer .links a{
+		color: #b1b3b9;
+    	padding: 10px;
+	}
+	.footer .links a:hover{
+		color:#009af3;
+    	
+	}
+	.footer .copyright{
+		width: 1000px;
+		height: 180px;
+		margin: 40px auto 0;
+	}
+	.copyright .footerIcon{
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+		margin-top: -2px;
+		background: url(images/footer_icon.png) no-repeat 0 0;
+	}
+	.copyright .office-verification{
+		margin-left: 5px;
+		padding: 5px 10px;
+		background: url(images/logo_down.png) no-repeat 0 0;
+	}
+	.copyright p{
+		line-height: 30px;
+		text-align: center;
+		color: #b1b3b9;
+		font-size: 14px;
+	}
+	.copyright a{
+		color: #999;
+	}
+</style>
+</head>
+
+<body>
+<div id="head">
+	<h1 class="logo">
+		<img src="images/logo.png"/>
+	</h1>
+	<div class="search">
+	    <div class="search_input">
+			<input type="text" />
+			<div class="search_btn">
+			<i class="search_icon"></i>
+			</div>
+		</div>	
+	</div>
+	<div class="head_right">
+		<ul>
+			<li><a href="客服中心/客服中心.html" target="_blank">客服中心</a></li>
+			<li><a href="招贤纳士/招贤纳士.html" target="_blank">招纳贤士</a></li>
+			<li><a href="会员中心/会员中心.html" target="_blank">会员中心</a></li>
+		</ul>
+		<div class="loading">
+			<a href="javascript:void(0);" style="color:white;"><div class="login">登录</div></a>
+			<a href="注册.html"><div class="regin">注册</div></a>
+		</div>
+	</div>
+</div>
+    <!--首页榜单-->
+<div id="navWrap">
+	<div class="nav">
+      	<ul class="homeNav">
+       		<li style="width: 92px;height: 55px;"><a class="normal" href="首页/首页.html">首页</a></li>
+		    <li style="width: 92px;height: 55px;"><a class="normal" href="榜单/榜单.html">榜单</a></li>
+            <li  style="width: 140px;height: 55px;"><a class="normal" id="productCenter" href="下载客户端/Downlode.html">下载客户端</a></li>
+            <li class="more" style="width: 113px;height: 55px;"><a href="javascript:void(0);"  id="showMore">更多</a></li>
+       </ul>
+     	<ul class="secondMenu" id="secondMenu" style="display: none;">
+            <li><a href="电台.html">电台</a></li>
+            <li><a href="更多——MV/MV.html">MV</a></li>
+            <li><a href="更多——歌单/Song.html">歌单</a></li>
+            <li><a href="歌手.html">歌手</a></li>
+       </ul>
+       <ul class="subNav">
+            <li><a target="_blank" href="音乐直播/音乐直播.html" class="icon-nav1">音乐直播</a></li>
+			<li><a target="_blank" href="酷狗LIVE/酷狗LIVE.html" class="icon-nav2">酷狗LIVE</a></li>
+			<li><a target="_blank" href="音乐人.html" class="icon-nav3">音乐人</a></li>
+			<li><a target="_blank" href="游戏/Play.html" class="icon-nav4">游戏</a></li>
+			<li><a target="_blank" href="商城/Shop.html" class="icon-nav5">商城</a></li>
+       </ul>
+    </div>
+</div>
+<div id="singers">
+	<div class="allSingers">
+		<ul class="allSingers1">
+			<li class="all"><a title="全部歌手" href="歌手.html" target="_blank">全部歌手</a></li>
+			<li><a title="华语男歌手" href="歌手1.html">华语男歌手</a></li>
+			<li><a title="华语女歌手" href="歌手.html">华语女歌手</a></li>
+			<li><a title="华语组合" href="歌手1.html">华语组合</a></li>
+		</ul>
+		<ul class="allSingers2">
+			<li><a title="日韩男歌手" href="歌手1.html">日韩男歌手</a></li>
+			<li><a title="日韩女歌手" href="歌手1.html">日韩女歌手</a></li>
+			<li><a title="日韩组合" href="歌手1.html">日韩组合</a></li>
+		</ul>
+		<ul class="allSingers3">
+			<li> <a title="欧美男歌手" href="歌手1.html">欧美男歌手</a></li>
+			<li><a title="欧美女歌手" href="歌手1.html">欧美女歌手</a></li>
+			<li><a title="欧美组合" href="歌手1.html">欧美组合</a></li>
+			<li style="margin-top: 25px;"><a title="其他歌手" href="歌手1.html" onclick="sdnClick(12082)">其他</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<div class="hotList">
+			<div class="figure">
+				<a title="热门歌手" href="" class="hot">热门</a>
+				<a href="歌手1.html">A</a>
+				<a href="歌手.html">B</a>
+				<a href="歌手1.html">C</a>
+				<a href="歌手.html">D</a>
+				<a href="歌手1.html">E</a>
+				<a href="歌手.html">F</a>
+				<a href="歌手1.html">G</a>
+				<a href="歌手.html">H</a>
+				<a href="歌手1.html">I</a>
+				<a href="歌手.html">J</a>
+				<a href="歌手1.html">K</a>
+				<a href="歌手1.html">L</a>
+				<a href="歌手1.html">M</a>
+				<a href="歌手1.html">N</a>
+				<a href="歌手1.html">O</a>
+				<a href="歌手1.html">P</a>
+				<a href="歌手1.html">Q</a>
+				<a href="歌手1.html">R</a>
+				<a href="歌手1.html">S</a>
+				<a href="歌手1.html">T</a>
+				<a href="歌手1.html">U</a>
+				<a href="歌手1.html">V</a>
+				<a href="歌手1.html">W</a>
+				<a href="歌手1.html">X</a>
+				<a href="歌手1.html">y</a>
+				<a href="歌手1.html">Z</a>
+				<a href="http://www.kugou.com/yy/singer/index/1-null-2.html" class="qt  " onclick="sdnClick(12083)" title="其他歌手">其他</a> 
+			</div>
+		</div>	
+		<ul class="singer_pic">
+			<li>
+				<a title="摩登兄弟" class="pic" href="">
+					<img alt="摩登兄弟" src="images/20150710183035465305.jpg"/>
+					<i>1<em>st</em></i>
+				</a>
+				<strong><a href="" title="摩登兄弟" style="color: black;">摩登兄弟</a></strong>
+			</li>
+			<li>
+				<a title="TFBOYS" class="pic" href="">
+					<img alt="TFBOYS" src="images/20180518110342985 (1).jpg"/>
+					<i>2<em>st</em></i>
+				</a>
+				<strong><a href="" title="TFBOYS" style="color: black;">TFBOYS</a></strong>
+			</li>
+			<li>
+				<a title="凤凰传奇" class="pic" href="">
+					<img alt="凤凰传奇" src="images/20180530091046423.jpg"/>
+					<i>3<em>st</em></i>
+				</a>
+				<strong><a href="" title="凤凰传奇" style="color: black;">凤凰传奇</a></strong>
+			</li>
+			<li>
+				<a title="BEYOND" class="pic" href="">
+					<img alt="BEYOND" src="images/20160418100531196.jpg"/>
+					<i>4<em>st</em></i>
+				</a>
+				<strong><a href="" title="BEYOND" style="color: black;">BEYOND</a></strong>
+			</li>
+			<li>
+				<a title="五月天" class="pic" href="">
+					<img alt="五月天" src="images/20180523163736234.jpg"/>
+					<i>5<em>st</em></i>
+				</a>
+				<strong><a href="" title="五月天" style="color: black;">五月天</a></strong>
+			</li>
+			<li>
+				<a title="S.H.E>" class="pic" href="">
+					<img alt="S.H.E" src="images/20160324181449303141.jpg"/>
+					<i>6<em>st</em></i>
+				</a>
+				<strong><a href="" title="S.H.E" style="color: black;">S.H.E</a></strong>
+			</li>
+			<li>
+				<a title="房东的猫" class="pic" href="">
+					<img alt="房东的猫" src="images/20170717183434600.jpg"/>
+					<i>7<em>st</em></i>
+				</a>
+				<strong><a href="" title="房东的猫" style="color: black;">房东的猫</a></strong>
+			</li>
+			<li>
+				<a title="NINE PERCENT" class="pic" href="">
+					<img alt="NINE PERCENT" src="images/20180509191826635.jpg"/>
+					<i>8<em>st</em></i>
+				</a>
+				<strong><a href="" title="NINE PERCENT" style="color: black;">NINE PERCENT</a></strong>
+			</li>
+			<li>
+				<a title="网络歌手" class="pic" href="">
+					<img alt="网络歌手" src="images/20121212151636904979.jpg"/>
+					<i>9<em>st</em></i>
+				</a>
+				<strong><a href="" title="网络歌手" style="color: black;">网络歌手</a></strong>
+			</li>
+			<li>
+				<a title="南征北战NZBZ" class="pic" href="">
+					<img alt="南征北战NZBZ" src="images/20170515151828341.jpg"/>
+					<i>10<em>st</em></i>
+				</a>
+				<strong><a href="" title="南征北战NZBZ" style="color: black;">南征北战NZBZ</a></strong>
+			</li>
+			<li>
+				<a title="小虎队" class="pic" href="">
+					<img alt="小虎队" src="images/20171121120712529.jpg"/>
+					<i>11<em>st</em></i>
+				</a>
+				<strong><a href="" title="小虎队" style="color: black;">小虎队</a></strong>
+			</li>
+			<li>
+				<a title="安与骑兵" class="pic" href="">
+					<img alt="安与骑兵" src="images/20150128150716900565.jpg"/>
+					<i>12<em>st</em></i>
+				</a>
+				<strong><a href="" title="安与骑兵" style="color: black;">安与骑兵</a></strong>
+			</li>
+			<li>
+				<a title="水木年华" class="pic" href="">
+					<img alt="水木年华" src="images/20160527165902920240.jpg"/>
+					<i>13<em>st</em></i>
+				</a>
+				<strong><a href="" title="水木年华" style="color: black;">水木年华</a></strong>
+			</li>
+			<li>
+				<a title="牛奶咖啡" class="pic" href="">
+					<img alt="牛奶咖啡" src="images/20160418100536676.jpg"/>
+					<i>14<em>st</em></i>
+				</a>
+				<strong><a href="" title="牛奶咖啡" style="color: black;">牛奶咖啡</a></strong>
+			</li>
+			<li>
+				<a title="羽·泉" class="pic" href="">
+					<img alt="羽·泉" src="images/20180515145019932.jpg"/>
+					<i>15<em>st</em></i>
+				</a>
+				<strong><a href="" title="羽·泉" style="color: black;">羽·泉</a></strong>
+			</li>
+			<li>
+				<a title="筷子兄弟" class="pic" href="">
+					<img alt="筷子兄弟" src="images/20170101005922562.jpg"/>
+					<i>16<em>st</em></i>
+				</a>
+				<strong><a href="" title="筷子兄弟" style="color: black;">筷子兄弟</a></strong>
+			</li>
+			<li>
+				<a title="动力火车" class="pic" href="">
+					<img alt="动力火车" src="images/20140313151707367709.jpg"/>
+					<i>17<em>st</em></i>
+				</a>
+				<strong><a href="" title="动力火车" style="color: black;">动力火车</a></strong>
+			</li>
+			<li>
+				<a title="苏打绿" class="pic" href="">
+					<img alt="苏打绿" src="images/20161231131939757937.jpg"/>
+					<i>18<em>st</em></i>
+				</a>
+				<strong><a href="" title="苏打绿" style="color: black;">苏打绿</a></strong>
+			</li>
+		</ul>
+		<div class="singer_name">
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="up" title="上升了12位"></span>
+						<a title="黄家驹" href="" class="text">黄家驹</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="up" title="上升了11位"></span>
+						<a title="华晨宇" href="" class="text">华晨宇</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="down" title="下降了47位"></span>
+						<a title="孙露"  href="" class="text">孙露</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="up" title="上升了46位"></span>
+						<a title="鹿晗" href="" class="text">鹿晗</a>
+				</li>	
+			</ul>
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="down" title="下降了5位"></span>
+						<a title="许嵩" href="" class="text">许嵩</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="up" title="上升了17位"></span>
+						<a title="李荣浩" href="" class="text">李荣浩</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="up" title="上升了18位"></span>
+						<a title="冷漠"  href="" class="text">冷漠</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="normal" title="排名无变化"></span>
+						<a title="M哥" href="" class="text">M哥</a>
+				</li>	
+			</ul>
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="normal" title="排名无变化"></span>
+						<a title="张国荣" href="" class="text">张国荣</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="up" title="上升了1位"></span>
+						<a title="蔡徐坤" href="" class="text">蔡徐坤</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="down" title="下降了12位"></span>
+						<a title="汪峰"  href="" class="text">汪峰</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="up" title="上升了40位"></span>
+						<a title="G.E.M邓紫棋" href="" class="text">G.E.M邓紫棋</a>
+				</li>	
+			</ul>
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="down" title="下降了16位"></span>
+						<a title="冯提莫" href="" class="text">冯提莫</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="down" title="下降了49位"></span>
+						<a title="张宇" href="" class="text">张宇</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="up" title="上升了12位"></span>
+						<a title="任贤齐"  href="" class="text">任贤齐</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="down" title="j下降了36位"></span>
+						<a title="邓丽君" href="" class="text">邓丽君</a>
+				</li>	
+			</ul>
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="up" title="上升了3位"></span>
+						<a title="汪苏泷" href="" class="text">汪苏泷</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="down" title="下降了9位"></span>
+						<a title="BEYOND" href="" class="text">BEYOND</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="down" title="下降了81位"></span>
+						<a title="白小白"  href="" class="text">白小白</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="down" title="下降了8位"></span>
+						<a title="张韶涵" href="" class="text">张韶涵</a>
+				</li>	
+			</ul>
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="up" title="上升了58位"></span>
+						<a title="王俊凯" href="" class="text">王俊凯</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="up" title="上升了1位"></span>
+						<a title="谭咏麟" href="" class="text">谭咏麟</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="down" title="下降了118位"></span>
+						<a title="张信哲"  href="" class="text">张信哲</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="down" title="下降了37位"></span>
+						<a title="王菲" href="" class="text">王菲</a>
+				</li>	
+			</ul>
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="up" title="上升了2位"></span>
+						<a title="杨坤" href="" class="text">杨坤</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="down" title="下降了7位"></span>
+						<a title="刘若英" href="" class="text">刘若英</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="down" title="下降了16位"></span>
+						<a title="陈瑞"  href="" class="text">陈瑞</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="down" title="下降了8位"></span>
+						<a title="半阳" href="" class="text">半阳</a>
+				</li>	
+			</ul>
+			<ul class="singer_name1">
+				<li class="odd">
+						<span class="rank">19</span>
+						<span class="up" title="上升了10位"></span>
+						<a title="张碧晨" href="" class="text">张碧晨</a>
+				</li>
+				<li>
+						<span class="rank">20</span>
+						<span class="up" title="上升了17位"></span>
+						<a title="六哲" href="" class="text">六哲</a>
+				</li>
+				<li class="odd">
+						<span class="rank">21</span>
+						<span class="down" title="下降了89位"></span>
+						<a title="伍佰"  href="" class="text">伍佰</a>
+				</li>
+				<li>
+						<span class="rank">22</span>
+						<span class="down" title="下降了23位"></span>
+						<a title="王力宏" href="" class="text">王力宏</a>
+				</li>	
+			</ul>
+		</div>
+			
+		<div class="nextPage">
+			<a style="visibility:hidden" id="page_first" href="" title="首页" class="btnPage">首页</a>
+			<span class="PrePageSpan" style="visibility:hidden"><a id="page_pre" href="" title="上一页" class="btnPage">上一页</a></span>
+			<span id="page_1" class="current">1</span>
+			<a id="page_2" href="歌手2.html">2</a>
+			<a id="page_3" href="歌手1.html">3</a>
+			<a id="page_4" href="歌手2.html">4</a>
+			<a id="page_5" href="歌手.html">5</a>
+			<span class="NextPageSpan"><a id="page_next" href="歌手.html" title="下一页" class="btnPage">下一页</a></span>
+			<a id="page_last" href="歌手.html" title="尾页" class="btnPage">尾页</a>
+		</div>
+	</div>
+</div>
+<!--底部-->
+<div id="bottom">
+	<div class="footer">
+		<div class="links">
+			<a href="音乐人.html">关于酷狗</a>|
+			<a href="音乐人.html">监督举报</a>|
+			<a href="音乐人.html">广告服务</a>|
+			<a href="音乐人.html">版权指引</a>|
+			<a href="音乐人.html">隐私政策</a>|
+			<a href="音乐人.html">用户服务协议</a>|
+			<a href="音乐人.html">推广合作</a>|
+			<a href="音乐人.html">酷狗音乐人</a>|
+			<a href="音乐人.html">酷狗音乐推</a>|
+			<a href="音乐人.html">招聘信息</a>|
+			<a href="音乐人.html">客服中心</a>|
+			<a href="音乐人.html">用户体验提升计划</a>
+		</div>
+		<div class="copyright">
+			<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+			<p>信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339 &nbsp;&nbsp;&nbsp;
+			<a target="_blank" href="">粤ICP备09017694号-2</a>
+			<span class="footerIcon"><a target="_blank" href="">&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+			</p>
+			<p>广播电视节目制作经营许可证（粤）字第01270号&nbsp;&nbsp;&nbsp;&nbsp;营业性演出许可证穗天演440106026</p>
+			<p>穗公网监备案证第44010650010167&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证编号（粤）-非经营性-2012-0018<a  href="">&nbsp;&nbsp;&nbsp;<span>粤公网安备 44010602000141号</span><img src="images/icon_yuewangga1.png" width="16" height="16"></a></p>
+			<p>不良信息举报邮箱：jubao_music@kugou.net&nbsp;&nbsp;&nbsp;&nbsp;客服邮箱：cs@kugou.com</p>
+			<p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2018 KuGou-Inc.All Rights Reserved
+                <a class="office-verification" href="" target="_blank"></a>
+            </p>
+			
+		</div>
+		
+	</div>
+	
+</div>
+<script>
+	var secondMenu=document.getElementById("secondMenu");
+	var more=document.getElementsByClassName("more")[0];
+	more.onmouseover=function(){
+		secondMenu.style.display="block";
+	}
+	more.onmouseout=function(){
+		secondMenu.style.display="none";
+	}
+	setTimeout(function(){
+		secondMenu.onmouseover=function(){
+			this.style.display="block";
+			}
+		},500)
+
+	secondMenu.onmouseout=function(){
+		clearTimeout();
+		this.style.display="none";
+	}
+</script>
+</body>
+</html>

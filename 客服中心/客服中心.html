@@ -1,0 +1,859 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>客服中心_酷狗商城</title>
+<link rel="shortcut icon"  href="img/title.png"/>
+</head>
+<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	li{
+		list-style: none;
+		text-align: center;
+	}
+	input{
+		outline: none;
+	}
+
+	/*头部*/
+	#head{
+		width: 1000px;
+		height: 78px;
+		margin: 0 auto;
+		position: relative;
+		
+	}
+	#head .logo{
+		width: 153px;
+		height: 37px;
+		float: left;
+		margin-top: 20px;
+	}
+	#head .search{
+		width: 300px;
+   		height: 36px;
+    	margin-left: 193px;
+    	padding-top: 20px;
+		
+	}
+	#head .search_input{
+		width: 298px;
+    	height: 34px;
+    	border: 1px solid #ccc;
+    	line-height: 34px;
+		position: relative;
+		z-index: 100;
+	}
+	.search_input input{
+		width: 249px;
+    	height: 24px;
+    	line-height: 24px;
+		margin-left: 14px;
+    	padding: 5px 0;
+   	 	color: #666;
+		border: none;
+		font-size: 13px;
+		position: absolute;
+    	left: 0;
+    	top: 0;
+		outline: none; //边框按下去没有颜色
+		
+	}
+	#head .search_btn{
+		width: 34px;
+		height: 34px;
+		float: right;
+		right: 10px;
+    	top:10px;
+	}
+	#head .search_icon{
+		background: url(img/search.png);
+		background-position: -40px -56px;
+		width: 16px;
+		height: 16px;
+		right: 10px;
+    	top:10px;
+		position: absolute;
+		cursor: pointer;
+	}
+	#head .search_icon:hover{
+		background: url(img/search.png);
+		background-position: -40px -86px;
+		width: 16px;
+		height: 16px;
+		right: 10px;
+    	top:10px;
+		position: absolute;
+	}
+	#head .head_right{
+		width: 402px;
+		float: right;
+		height: 25px;
+		margin-top: -25px;
+		
+	}
+	.head_right ul{
+		width: 240px;
+		border-right: 1px solid #e6e6e6;
+		padding-right: 11px;
+        text-align: right;
+		float: left;
+		
+	}
+	.head_right ul li{
+		list-style: none;
+		float: left;
+		padding-left: 20px;
+	}
+	.head_right ul li a{
+		text-decoration: none;
+		color: #777;
+		font-size: 13px;
+	}
+	.head_right ul li a:hover{
+		color: #169af3;
+	}
+	#head .loading{
+		width: 110px;
+		height: 30px;
+		position: absolute;
+		right: 0;
+		top:25px;
+	}
+	.loading .login {
+		width: 48px;
+		height: 28px;
+		line-height: 28px;
+		border: 1px solid #169af3;
+		border-radius: 2px;
+		text-align: center;
+		background-color: #169af3;
+		float: left;
+	}
+	.loading .regin{
+		width: 48px;
+		height: 28px;
+		line-height: 28px;
+		border: 1px solid #dbdbdb;
+		border-radius: 2px;
+		text-align: center;
+		color: black;
+		text-decoration: none;
+		float:right;
+	}
+	.loading .login:hover{
+		background-color: #158fe1;
+	}
+	.loading .regin:hover{
+		border: 1px solid #169af3;
+		
+		}
+	.loading .regin a{
+		color:black;
+	}
+	.loading .regin:hover{
+		color: #169af3;
+	}
+	.loading a{
+		text-decoration: none;
+		font-size: 13px;
+	}
+
+	/*首页榜单*/
+	#navWrap{
+		width: 100%;
+		height: 55px;
+		background:#2c323b;
+		position: relative;
+	}
+	#navWrap .nav1{
+		width: 1000px;
+		margin: 0 auto;	
+	}
+	#navWrap li{
+		float: left;
+		list-style: none;
+	}
+	#navWrap a{
+		text-decoration: none;
+	}
+	.nav1 .homeNav{
+		width: 437px;
+		height: 55px;
+		float: left;
+		position: relative;
+	}
+	.homeNav .normalactive{
+		background-color: #0c8ed9;
+        color: #fff;
+	}
+	.homeNav a{
+		font-size: 16px;
+    	color: #ddd;
+		display:block;
+		
+	}
+	.homeNav  li:hover a{
+		color: white;
+	}
+	.homeNav li{
+		text-align: center;
+		line-height: 55px;
+		display:inline-block;
+	}
+	.homeNav li:hover{
+		
+        background-color: #0c8ed9;
+	}
+		
+	/*更多以及下拉列表*/
+	.homeNav .more a{
+		background:url(img/arrowMored.png) no-repeat;
+	    margin-left: 5px;
+    	padding: 0 30px;
+		margin-right: 5px;
+		background-position: 72px 8px;
+		display: inline;
+	}
+	.homeNav .more:hover a{
+		background:url(img/arrowMoreu.png)no-repeat;
+	    background-position: 70px 8px;
+        background-color: #0c8ed9;
+		
+	}
+	  .secondMenu{
+		position: absolute;
+		left: 500px;
+		top: 55px;
+		display: none;
+		width: 113px;
+		height: 146px;
+		background-color: #252a32;
+		z-index: 99;
+		}
+.secondMenu li{
+	display:block;
+    padding: 0;
+    height: 36px;
+    line-height: 36px;
+	float: none;
+    margin: 0;
+    width: 113px;
+	text-align: center;
+	cursor: pointer;
+}
+.secondMenu li:hover{
+	background-color: #2d343d;
+	border-top: 1px solid #383d44;
+    
+}
+	.secondMenu a{
+	text-align: center;
+    font-size: 15px;
+    color: #bbb;
+    background: 0 0;
+    background-color: #252b34;
+	display: block;
+}
+.secondMenu li:hover a{
+	color: #fff;
+	background-color: #2d343d;
+}
+	/*到这里止*/
+	.subNav {
+		width: 445.44px;
+		float:right;
+		margin-top: 16px;
+    	height: 35px;
+		
+	}
+	.subNav li{
+		margin-left: 30px;
+	}
+	.subNav a.icon-nav1{
+		background-position: 0 -119px;
+	}
+	.subNav a.icon-nav1:hover{
+		background-position: 0 -101px;
+	}
+	.subNav a.icon-nav2{
+		background-position:0 -155px;
+	}
+	.subNav a.icon-nav2:hover{
+		background-position:0 -137px;
+	}
+	.subNav a.icon-nav3{
+		background-position:0 -191px;
+	}
+	.subNav a.icon-nav3:hover{
+		background-position:0 -173px;
+	}
+	.subNav a.icon-nav4{
+		background-position:0 -226px;
+	}
+	.subNav a.icon-nav4:hover{
+		background-position:0 -208px;
+	}
+	.subNav a.icon-nav5{
+		background-position:0 -281px;
+	}
+	.subNav a.icon-nav5:hover{
+		background-position:0 -245px;
+	}
+	.subNav a{
+		background: url(img/sprite.png);
+		padding-left: 20px;
+		color: #bbb;
+    	font-size: 13px;
+	}
+	.subNav a:hover{
+		color: #14a9ff;
+		background: url(img/sprite.png);
+	}
+	/*中间*/
+#wrap{
+	width: 100%;
+    min-height: 200px;
+    height: 600px !important;
+	}
+.content{
+	width: 1000px;
+    margin: 0 auto;
+	min-height: 200px;
+	height: 540px !important;
+	overflow: hidden;
+	overflow-y: auto !important;
+	}
+.nav{
+	width: 1000px;
+    height: 40px;
+    background: #f3f3f3;
+    margin-top: 10px;
+    border: 1px solid #dadada;
+	cursor: pointer;
+	}
+.nav .d1{
+	width: 248px;
+	float:left;
+	border:1px solid #dadada;
+	height: 38px;
+	line-height: 39px;
+	background-color: #0c8ed9;
+	color: #fff;
+	font-size: 14px;
+}
+.nav .d2{
+	width: 248px;
+	float:left;
+	border:1px solid #dadada;
+	height: 38px;
+	line-height: 39px;
+	color: black;
+	font-size: 14px;
+}
+.nav .d3{
+	width: 248px;
+	float:left;
+	border:1px solid #dadada;
+	height: 38px;
+	line-height: 39px;
+	color: black;
+	font-size: 14px;
+}
+.nav .d4{
+	width: 248px;
+	float:left;
+	border:1px solid #dadada;
+	height: 38px;
+	line-height: 39px;
+	color: black;
+	font-size: 14px;
+}
+.nav li:hover{
+	background-color: #0c8ed9;
+	color: #fff;
+	}
+.centerbox{
+	width: 1000px;
+	height: auto;
+	}
+.box1{
+	margin:20px 0;
+	height: 409px;
+	width: 1000px;
+	}
+.contents_checked{
+	width: 1000px;
+	height: 405px;
+	}
+.formident{
+	width: 1000px;
+	height: 19px;
+	margin: 7px 0;
+	font-size: 13px;
+	}
+.contents_checked b{
+	font-weight: 700;
+	width: 100px;
+	text-align: right;
+	float: left;
+	font-size: 13px;
+	}
+.formident input{
+	text-indent: 4px;
+    padding-top: 3px;
+	width: 20px;
+    border: 0;
+    height: 13px;
+    line-height: 13px;
+    vertical-align: top;
+    margin-top: 2px !important;
+	}
+.choseplat{
+	width: 1000px;
+	height: 36px;
+	margin: 7px 0;
+	cursor: pointer;
+	}
+.choseplat .a1{
+		border: 1px solid #80dbff;
+    	background: #e6f8ff;
+    	font-weight: 600;
+    	color: #777;
+		float: left;
+    	padding: 4px 20px;
+    	margin-right: 12px;
+		height: 19px;
+		font-size: 13px;
+	}
+.choseplat .a2{
+	float: left;
+    padding: 4px 20px;
+    border: 1px solid #666;
+    margin-right: 12px;
+    font-size: 13px;
+    color: #777;
+	height: 19px;
+}
+	.choseplat .a3{
+	float: left;
+    padding: 4px 20px;
+    border: 1px solid #666;
+    margin-right: 12px;
+    font-size: 13px;
+    color: #777;
+	height: 19px;
+}
+	.choseplat .a4{
+	float: left;
+    padding: 4px 20px;
+    border: 1px solid #666;
+    margin-right: 12px;
+    font-size: 13px;
+    color: #777;
+	height: 19px;
+}
+.choseplat span:hover{
+	border: 1px solid #80dbff;
+	}
+/*.current{
+	border: 1px solid #80dbff;
+    background: #e6f8ff;
+    font-weight: 600;
+    color: #777;	
+	}*/
+.extra1{
+	position: relative;
+    margin: 0px;
+    padding-left: 100px;
+    font-size: 12px;
+    color: #888;
+	width: 900px;
+	height: 18px;
+	}
+.extra1 img{
+	margin: -2px 10px 0px 0px;
+	}
+.hidepic{
+	position: absolute;
+    left: 600px;
+    top: -10px;
+	width: 420px;
+    height: 444px;
+	background-image: url(img/dialog.png);
+	background-repeat: no-repeat;
+	display: none;
+	
+	}
+.feedback{
+	height: auto;
+	}
+.feedback textarea{
+		resize: vertical;/*指定一个div元素，允许用户调整大小：用户可调整元素的高度*/
+	}
+.upload{
+	clear: both;/*在左右两侧均不允许浮动元素*/	
+	height: 32px;
+	line-height: 32px;
+	}
+.upload a{
+    padding: 4px 20px;
+    border: 1px solid #666;
+    margin-right: 12px;
+    font-size: 13px;
+    color: #777;
+	height: 32px;
+	line-height: 32px;
+	}
+.upload a:hover{border: 1px solid #80dbff;}
+.account{
+	height: 27px;	
+	margin: 7px 0;
+	}
+.account input{
+	border: 1px solid #666;
+    width: 132px;
+    height: 22px;
+    line-height: 22px;
+    text-indent: 4px;
+    padding-top: 3px;	
+	}
+.contact input{
+	border: 1px solid #666;
+    width: 132px;
+    height: 22px;
+    line-height: 22px;
+    text-indent: 4px;
+    padding-top: 3px;	
+	}
+.send a{
+	float: left;
+    padding: 4px 20px;
+    border: 1px solid #666;
+    font-size: 13px;
+    color: #777;
+	margin: 7px 8px 7px 0;
+	}
+.send a:hover{
+	border: 1px solid #80dbff;
+	}
+	/*酷狗商城客服中心*/
+	.contents{
+		display: none;
+		position: absolute;
+        left: 260px;
+        top: 200px;
+	}
+.contents table{
+	width: 1000px;
+	height:328px;
+	border:1px solid #dadada;
+	margin-top: 22px;
+	margin-bottom: 50px;
+	}
+.contents table tr{
+	border:1px solid #dadada;
+	}
+.tr1{
+	width: 100%;
+	height: 46px;
+	}
+.tr1 td{
+	font-size: 16px;
+	color: #333333;
+	text-indent: 22px;/*缩进*/
+	font-weight: bold;/*文本粗细 粗体*/
+	}
+.tr2{
+	width: 100%;
+	height: 282px;	
+	}
+.tr2 td{
+	width: 297px;
+    border: 1px solid #dadada;
+    border-left: none;
+    border-bottom: none;	
+	}
+.tablepic{
+	width: 80px;
+    height: 80px;
+    margin: 0 auto;	
+	}
+.onlinekf{
+	height: 30px;
+    line-height: 30px;
+    margin: 5px 0px 5px 0px;
+
+	}
+.onlinekf span{
+	margin-left:90px;
+    border-radius: 5px;
+    padding: 5px 10px;
+	background: #008ad4;
+    font-size: 14px;
+	}
+.server{
+	height: 20px;
+    text-align: center;
+	padding-left: 0px;
+	}
+.contents p{
+	font-size: 14px;
+    color: #999999;
+    text-align: center;
+	}
+.tr2 h2{
+	height: 42px;
+    line-height: 42px;
+    font-size: 18px;	
+	text-align: center;
+	color: #333333;
+	}
+
+
+	/*底部*/
+	#bottom{
+		width: 100%;
+		height: 319px;
+		background: #2c323b;
+		margin-top: -60px;
+	}
+	#bottom .footer{
+		padding-bottom: 50px;
+	}
+	.footer .links{
+		position: relative;
+		border-bottom: 1px solid #3d424a;
+		padding: 15px 0;
+		font-size: 12px;
+		color: #b1b3b9;
+		text-align: center;
+		height: 20px;
+	}
+	.footer .links a{
+		color: #b1b3b9;
+    	padding: 10px;
+	}
+	.footer .links a:hover{
+		color:#009af3;
+    	
+	}
+	.footer .copyright{
+		width: 1000px;
+		height: 180px;
+		margin: 40px auto 0;
+	}
+	.copyright .footerIcon{
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+		margin-top: -2px;
+		background: url(img/footer_icon.png) no-repeat 0 0;
+	}
+	.copyright .office-verification{
+		margin-left: 5px;
+		padding: 5px 10px;
+		background: url(img/logo_down.png) no-repeat 0 0;
+	}
+	.copyright p{
+		line-height: 30px;
+		text-align: center;
+		color: #b1b3b9;
+		font-size: 14px;
+	}
+	.copyright a{
+		color: #999;
+	}
+</style>
+<body>
+<div style="width: 100%;min-width: 1000px;margin: 0 auto;position: relative;">
+<div id="head">
+	<h1 class="logo">
+		<a href=""><img src="img/logo.png"/></a>
+	</h1>
+	<div class="search">
+	    <div class="search_input">
+			<input type="text" />
+			<div class="search_btn">
+			<i class="search_icon"></i>
+			</div>
+		</div>	
+	</div>
+	<div class="head_right">
+		<ul>
+			<li><a href="">客服中心</a></li>
+			<li><a href="../招贤纳士/招贤纳士.html" target="_blank">招贤纳士</a></li>
+			<li><a href="../会员中心/会员中心.html" target="_blank">会员中心</a></li>
+		</ul>
+		<div class="loading">
+			<a href="" style="color:white;"><div class="login">登录</div></a>
+			<a href=""><div class="regin">注册</div></a>
+		</div>
+	</div>
+</div>
+<!--首页榜单-->
+<div id="navWrap">
+	<div class="nav1">
+      <ul class="homeNav">
+       		<li style="width: 92px;height: 55px;"><a class="normal active" href="">首页</a></li>
+		    <li style="width: 92px;height: 55px;"><a class="normal" href="D:/A.源辰/一期项目/榜单/榜单.html">榜单</a></li>
+            <li  style="width: 140px;height: 55px;"><a class="normal" id="productCenter" href="D:/A.源辰/一期项目/下载客户端/Downlode.html">下载客户端</a></li>
+            <li class="more" style="width: 113px;height: 55px;"><a href=""  id="showMore">更多</a></li>
+       </ul>
+       <ul class="secondMenu" id="secondMenu" style="display: none;">
+             <li><a href="D:/A.源辰/一期项目/电台.html">电台</a></li>
+             <li><a href="D:/A.源辰/一期项目/更多——MV/MV.html">MV</a></li>
+             <li><a href="D:/A.源辰/一期项目/更多——歌单/Song.html">歌单</a></li>
+             <li><a href="D:/A.源辰/一期项目/歌手.html">歌手</a></li>
+        </ul>
+       <ul class="subNav">
+                    <li><a target="_blank" href="D:/A.源辰/一期项目/音乐直播/音乐直播.html" class="icon-nav1">音乐直播</a></li>
+                    <li><a target="_blank" href="D:/A.源辰/一期项目/酷狗LIVE/酷狗LIVE.html" class="icon-nav2">酷狗LIVE</a></li>
+                    <li><a target="_blank" href="D:/A.源辰/一期项目/音乐人.html" class="icon-nav3">音乐人</a></li>
+                    <li><a target="_blank" href="D:/A.源辰/一期项目/游戏/Play.html" class="icon-nav4">游戏</a></li>
+                    <li><a target="_blank" href="D:/A.源辰/一期项目/商城/Shop.html" class="icon-nav5">商城</a></li>
+                    
+        </ul>
+	</div>
+</div>
+<div id="wrap">
+ 	<div class="content">
+ 		<div class="nav">
+ 			<ul id="list-title">
+ 				<li class="d1" onClick="ABC()">酷狗软件客服中心</li>
+ 				<li class="d2" onClick="abc()">酷狗商城客服中心</li>
+ 				<li class="d3">酷狗游戏客服中心</li>
+				<li class="d4">酷狗直播客服中心</li>
+ 			</ul>
+ 		</div>
+ 		<div class="centerbox">
+ 			<div class="box1">
+ 					<div class="contents_checked">
+ 						<div class="formident">
+ 						<b>您的身份：</b>            <!--加粗标签-->
+ 						<input name="ident" type="radio" value="normal" style="width: 20px;border: 0;height: 13px;line-height: 13px;vertical-align: top;margin-top: 2px !important;"/>普通用户
+ 						<input name="ident" type="radio" value="VIP"/>VIP用户(尊享绿色通道服务)         
+ 					</div>
+ 						<div class="choseplat">
+ 						<b>选择平台：</b>
+ 						<span id="a1" class="a1">电脑版</span>
+ 						<span id="a2" class="a2">安卓手机</span>
+ 						<span id="a3" class="a3">iPhone手机</span>
+ 						<span id="a4" class="a4">Mac版</span>
+ 					</div>
+ 						<div class="extra1">
+ 						<img src="img/tipsIcon.jpg"/>
+ 						如果乐库打不开，请检查是否安装运行了广告助手<img src="img/adHelp.jpg"/>，如果是请卸载，<a href="" style="color:#1579e9;" class="showlog">查看卸载方法>></a>
+ 						<div class="hidepic" ></div>
+ 					</div>
+ 						<div class="feedback">
+ 						<b style="margin-top: 0;">反馈内容：</b>
+ 						<textarea  id="contentt" name="content" style="color:rgb(0,0,0);font-size: 12px;width: 600px;overflow: hidden;border:1px solid rgb(102,102,102);padding: 5px;margin-top: 0px;margin-bottom: 0px;height: 158px;outline: none;"></textarea>
+ 					</div>
+ 						<div class="upload">
+ 						<b style="margin-top:0px;">上传截图：</b>
+ 						<a href="javascript" hidefocus="true" class="btn_file">浏览</a>
+ 						<span style="color:silver;font-size: 12px;">不超过2M</span>
+ 					</div>
+ 						<div class="account">
+ 						<b>酷狗账号：</b>
+ 						<input type="text" name="accountname" id="kugouaccount">
+ 					</div>
+ 						<div class="contact">
+ 						<b>联系方式：</b>
+ 						<input name="qq" type="text" id="inputqq" style="font-size: 12px;font-family: 宋体，Arial,Verdana;padding-left: 3px;" placeholder="输入联系QQ" onfocus="setvalue(this,1)"onblur="setValue(this,2)" maxlength="16" write="false">
+ 						<span style="color: silver;font-size: 13px;">仅酷狗工作人员可见，请暂时取消好友时的验证限制</span>
+ 						
+ 					</div>
+ 						<div class="send">
+ 						<a hidefocus="true" id="send"  href="javascript" style="margin-left: 100px;">发送</a>
+ 						<span style="font-size: 13px; line-height: 35px;color: red;font-weight: normal;display: none;" class="macqq">欢迎加入酷狗Mac版反馈QQ群（552745790），反馈更迅速！</span>
+ 					</div>
+ 					</div>
+ 					<!--酷狗商城客服中心-->
+ 					<div class="contents">
+ 						<table border="0" cellspacing="0" cellpadding="0" class="table">
+ 							<tbody>
+								<tr class="tr1">
+									<td colspan="4">自助服务</td>
+								</tr>
+								<tr class="tr2">
+									<td>
+										<div class="tablepic"><img src="img/s_icon_01.jpg" style="margin: 0 auto;"/></div>
+										<div class="onlinekf">
+											<span><a href="" style="color: #fff;">在线客服</a></span>
+										</div>
+										<div class="server">
+											<p>周一至周五 9:30-18:30</p>
+											<p>（仅受理订单相关咨询）</p>
+										</div>
+									</td>
+									<td>
+										<div class="tablepic"><img src="img/s_icon_02.jpg"/></div>
+										<h2>400-626-0878</h2>
+										<div class="server">
+											<p>周一至周五 9:30-18:30</p>
+											<p>（仅受理订单相关咨询）</p>
+										</div>
+									</td>
+									<td>
+										<div class="tablepic"><img src="img/s_icon_03.jpg"/></div>
+										<h2 style="font-weight: normal;">投诉建议</h2>
+										<p>Service@kugou.com</p>
+									</td>
+									<td>
+										<div class="tablepic"><img src="img/s_icon_04.jpg"/></div>
+										<h2 style="font-weight: normal;">真伪查询</h2>
+										<p>请刮开产品上的防伪标签获取防伪码</p>
+									</td>
+								</tr>
+ 							</tbody>
+ 						</table>
+ 					</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <!--底部-->
+<div id="bottom">
+	<div class="footer">
+		<div class="links">
+			<a href="">关于酷狗</a>|
+			<a href="">监督举报</a>|
+			<a href="">广告服务</a>|
+			<a href="">版权指引</a>|
+			<a href="">隐私政策</a>|
+			<a href="">用户服务协议</a>|
+			<a href="">推广合作</a>|
+			<a href="">酷狗音乐人</a>|
+			<a href="">酷狗音乐推</a>|
+			<a href="">招聘信息</a>|
+			<a href="">客服中心</a>|
+			<a href="">用户体验提升计划</a>
+		</div>
+		<div class="copyright">
+			<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+			<p>信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339 &nbsp;&nbsp;&nbsp;
+			<a target="_blank" href="">粤ICP备09017694号-2</a>
+			<span class="footerIcon"><a target="_blank" href="">&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+			</p>
+			<p>广播电视节目制作经营许可证（粤）字第01270号&nbsp;&nbsp;&nbsp;&nbsp;营业性演出许可证穗天演440106026</p>
+			<p>穗公网监备案证第44010650010167&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证编号（粤）-非经营性-2012-0018<a  href="">&nbsp;&nbsp;&nbsp;<span>粤公网安备 44010602000141号</span><img src="img/icon_yuewangga1.png" width="16" height="16"></a></p>
+			<p>不良信息举报邮箱：jubao_music@kugou.net&nbsp;&nbsp;&nbsp;&nbsp;客服邮箱：cs@kugou.com</p>
+			<p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2018 KuGou-Inc.All Rights Reserved
+                <a class="office-verification" href="" target="_blank"></a>
+            </p>
+			
+		</div>
+		
+	</div>
+</div>
+<script src="客服中心.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

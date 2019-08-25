@@ -1,0 +1,860 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*头*/
+#topbanner{
+	width: 1000px;
+	height: 78px;
+	margin: auto;
+	position: relative;
+}
+#topbanner .top_logo{
+	display: inline-block;
+	width: 153px;
+	height: 37px;
+	background: url(../歌曲播放Img/logo.png);
+	margin-top: 20px;
+}
+#topbanner .search{
+	width: 298px;
+	height: 34px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 20px;
+	left: 180px;
+}
+#topbanner input{
+	width: 249px;
+	height: 24px;
+	border: none;
+	outline: none;  /*搜索框消失*/
+	margin-left: 14px;
+	padding: 5px 0px 5px 0px;
+	color: #666;
+	font: 13px/1.5 微软雅黑,simsun,sans-serif;
+}
+#topbanner .top_right{
+	width: 402px;
+	height: 25px;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+}
+.top_right ul{
+	width: 262px;
+	height: 20px;
+	border-right: 1px solid #e6e6e6;
+}
+.top_right li{
+	float: left;
+	padding: 0px 15px;
+}
+.top_right li a{
+	color:  #777;
+	font: 13px/1.5 Microsoft YaHei,微软雅黑,simsun,sans-serif;
+	font-weight: 500;
+}
+.top_right li a:hover{
+	color: #0c8ed9;
+}
+.top_right .reg{
+	width: 110px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+}
+.top_right .reg .a1{
+	display: inline-block;
+	width: 48px;
+	height: 28px;
+	border: 1px solid #169af3;
+	background-color: #169af3;
+	border-radius: 2px;
+	color: #fff;
+	font: 13px/1.5 Microsoft YaHei,微软雅黑,simsun,sans-serif;
+	line-height: 28px;
+	text-align: center;
+}
+.top_right .reg .a2{
+	display: inline-block;
+	width: 48px;
+	height: 28px;
+	border-radius: 2px;
+	color: #777;
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	font: 13px/1.5 Microsoft YaHei,微软雅黑,simsun,sans-serif;
+	line-height: 28px;
+	text-align: center;
+}
+.top_right .reg .a1:hover{
+	background: #0c8ed9;
+}
+.top_right .reg .a2:hover{
+	color: #169af3;
+	border: 1px solid #169af3;
+}
+#dirBox{
+	width: 100%;
+	height: 55px;
+	background: #2c323b;
+	position: relative;
+}
+#dirBox .dir_left{
+	width: 437px;
+	height: 55px;
+	position: absolute;
+	left: 180px;
+}
+.dir_left .dir_aa{
+	float: left;
+	width: 92px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.dir_left .dir_aa a{
+	font-size: 16px;
+	color: #ddd;
+}
+.dir_left .dir_down{
+	float: left;
+	width: 140px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	background-color: #0c8ed9;
+}
+.dir_left .dir_down a{
+	color: #fff;
+	font-size: 16px;
+}
+.dir_left .dir_more{
+	float: left;
+	width: 113px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.dir_left .dir_more a{
+	display: inline-block;
+	width: 92px;
+	height: 22px;
+	color: #ddd;
+	font-size: 16px;
+	background: url(../歌曲播放Img/arrowMored.png) no-repeat 72px 8px;
+	line-height: 22px;
+}
+.dir_left .dir_more:hover a{
+	background: url(../歌曲播放Img/arrowMoreu.png) no-repeat 72px 8px;
+}
+/*更多盒子隐藏部分*/
+#dirBox .dir_hind{
+	position: absolute;
+	left: 504px;
+	top: 55px;
+	display: none;
+	width: 113px;
+	height: 146px;
+	background-color: #252a32;
+	z-index: 99;
+}
+.dir_hind li{
+	display:block;
+	padding: 0;
+	height: 36px;
+	line-height: 36px;
+	float: none;
+	margin: 0;
+	width: 113px;
+	text-align: center;
+	cursor: pointer;
+}
+.dir_hind li:hover{
+	background-color: #2d343d;
+	border-top: 1px solid #383d44;
+}
+.dir_hind li a{
+	text-align: center;
+	font-size: 15px;
+	color: #bbb;
+	background: 0 0;
+	background-color: #252b34;
+	display: block;
+}
+.dir_hind li:hover a{
+	color: #fff;
+	background-color: #2d343d;
+}
+#dirBox .dir_right{
+	width: 445px;
+	height: 55px;
+	position: absolute;
+	right: 180px;
+}
+.dir_right li{
+	float: left;
+}
+.dir_right .r1{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../歌曲播放Img/sprite.png) 0 -119px no-repeat;
+}
+.dir_right .r2{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../歌曲播放Img/sprite.png) 0 -155px no-repeat;
+}
+.dir_right .r3{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../歌曲播放Img/sprite.png) 0 -191px no-repeat;
+}
+.dir_right .r4{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../歌曲播放Img/sprite.png) 0 -226px no-repeat;
+}
+.dir_right .r5{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../歌曲播放Img/sprite.png) 0 -281px no-repeat;
+}
+.dir_right .r1:hover{
+	background: url(../歌曲播放Img/sprite.png) 0 -101px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r2:hover{
+	background: url(../歌曲播放Img/sprite.png) 0 -137px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r3:hover{
+	background: url(../歌曲播放Img/sprite.png) 0 -173px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r4:hover{
+	background: url(../歌曲播放Img/sprite.png) 0 -208px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r5:hover{
+	background: url(../歌曲播放Img/sprite.png) 0 -245px no-repeat;
+	color: #14a9ff;
+}
+/*内容*/
+#con{
+	width: 100%;
+	height: 530px;
+	overflow: hidden;
+	position: relative;
+	background: #000;
+}
+.conx{
+	display: block;
+	width: 840px;
+	height: 493px;
+	margin: auto;
+	margin-top: 10px;
+	z-index: 12;
+	clear: both;
+	position: relative;
+}
+.left{
+	width: 262px;
+	float: left;
+}
+.left img{
+	width: 260px;
+	height: 260px;
+	z-index: 12;
+}
+.down{
+	display: inline-block;
+	width: 230px;
+	height: 50px;
+	background: url(../歌曲播放Img/downlaod_bg.png) no-repeat;
+	margin-top: 40px;
+	margin-left: 16px;
+}
+.down:hover{
+	background: url(../歌曲播放Img/downlaod_bg.png) 229px 0px;
+}
+.right{
+	width: 460px;
+	min-height: 500px;
+	margin-top: -7px;
+	margin-left: 116px;
+	float: left;
+}
+.sName{
+	font-size: 24px;
+	font-style: normal;
+	color: #fff;
+	width: 460px;
+}
+.sMV{
+	display: inline-block;
+	width: 25px;
+	height: 13px;
+	margin: 15px 0 0 10px;
+	background:url(../歌曲播放Img/btn.png) 0 -214px;
+}
+.sMV:hover{
+	background:url(../歌曲播放Img/btn.png) 0 -228px;
+}
+.sDetail{
+	padding-top: 9px;
+	height: 33px;
+}
+.sDetailx{
+	line-height: 24px;
+	white-space: nowrap;
+	font-size: 15px;
+	color: #fff;
+	opacity: 0.6;
+	cursor: default;
+}
+.Detaila{
+	float: none;
+	color: #fff;
+	padding-right: 5px;
+	font-size: 13px;
+}
+.Detaila:hover{
+	text-decoration: underline;
+}
+.words{
+	height: 235px; 
+	overflow: hidden; 
+	padding: 0px; 
+	width: 460px;
+	margin-top: 17px;
+}
+.word{
+	width: 420px;
+	height: 34px;
+	font-size: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	opacity: 0.6;
+	color: #fff;
+	cursor: default;
+}
+.jspBar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8px;
+	height: 100%;
+}
+.jspTrack{
+	height: 261px;
+	margin-top: 85px;
+}
+.jspDrag{
+	height: 63px;
+	top: 1px;
+	background: #fff;
+	opacity: 0.2;
+	cursor: pointer;
+	border-radius: 8px;
+}
+.jspDrag:hover{
+	opacity: 0.8;
+}
+.bgs{
+	width: 100%;
+	height: 498px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.5) url(../歌曲播放Img/20150716004147248755.jpg) no-repeat;
+	background-size: 100% 100%;
+	filter: blur(90px);    /*高斯模糊*/
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+	z-index: 9;
+}
+#bot{
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 20px #403f3f;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+}
+.bmid{
+	width: 960px;
+	height: 80px;
+	margin: auto;
+}
+.bot_left{
+	width: 160px;
+	height: 80px;
+	float: left;
+}
+.prev{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(../歌曲播放Img/btn.png);
+	background-position: 0 -143px;
+	position: absolute;
+	margin-left: -7px;
+	margin-top: 22px;
+}
+.play{
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: url(../歌曲播放Img/btn.png);
+	position: absolute;
+	margin-left: 43px;
+	margin-top: 10px;
+}
+.stop{
+	display: none;
+	width: 60px;
+	height: 60px;
+	background: url(../歌曲播放Img/btn.png);
+	position: absolute;
+	margin-left: 43px;
+	margin-top: 10px;
+}
+.next{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(../歌曲播放Img/btn.png);
+	background-position: 0 -143px;
+	position: absolute;
+	margin-left: 117px;
+	margin-top: 22px;
+}
+.playImg{
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: url(../歌曲播放Img/20180601174340885649.jpg);
+	background-size: 100% 100%;
+	margin-left: 35px;
+	margin-top: 10px;
+	float: left;
+}
+.bot_mid{
+	margin-left: 10px;
+	width: 370px;
+	height: 80px;
+	float: left;
+	cursor: default;   /*鼠标显示箭头*/
+}
+.mid_up{
+	width: 370px;
+	height: 24px;
+	padding-top: 18px;
+}
+.songName{
+	color: #c4c3c3;
+	font-size: 13px;
+}
+.change-time, .all-time{
+	color: #fff;
+	font-size: 12px;
+	font-style: normal;
+}
+/*播放进度*/
+.mid_down{
+	width: 370px;
+	height: 5px;
+	margin-top: 11px;
+	cursor: pointer;
+}
+.progress_bg{
+	cursor: pointer;
+	height: 3px;
+}
+.progress_bg .bg_left{
+	display: block;
+	width: 2px;
+	height: 3px;
+	background: url(../歌曲播放Img/btn.png) -217px -200px;
+}
+.progress_bg .bg_middle{
+	display: block;
+	width: 370px;
+	height: 3px;
+	margin-left: 2px;
+	margin-top: -3px;
+	background: url(../歌曲播放Img/progress_bg_middle.png) repeat-x top left;
+}
+.progress_bg .bg_right{
+	display: block;
+	width: 2px;
+	height: 3px;
+	margin-left: 371px;
+	margin-top: -3px;
+	background: url(../歌曲播放Img/btn.png) -237px -200px;
+}
+.progress_bar{
+	height: 3px;
+	cursor: pointer;
+}
+.progress_bar .bar_left{
+	display: block;
+	width: 2px;
+	height: 3px;
+	margin-top: -3px;
+	background: url(../歌曲播放Img/btn.png) -527px -387px;
+}
+.progress_bar .bar_mid{
+	display: block;
+	margin-left: 2px;
+	width: 370px;
+	height: 3px;
+	overflow: hidden;
+	margin-top: -3px;
+	background: url(../歌曲播放Img/progress_bar_middle.png)repeat-x top left;
+}
+.drag_playhead{
+	position: absolute;
+	margin-top: -8px;
+	width: 371px;
+	height: 12px;
+}
+.drag_playhead .playhead{
+	display: block;
+	margin-left: 0.32%;
+	width: 12px;
+	height: 12px;
+	background:url(../歌曲播放Img/btn.png) -217px -181px;
+}
+/*右边功能块*/
+.bot_right{
+	width: 260px;
+	height: 80px;
+	float: left;
+	margin-left: 50px;
+	position: relative;
+}
+/*音量开关*/
+.bot_right .volume{
+	width: 16px;
+	height: 16px;
+	margin-top: 34px;
+	background: url(../歌曲播放Img/btn.png) -64px -195px;
+	cursor: pointer;
+	float: left;
+}
+.volume:hover{
+	background: url(../歌曲播放Img/btn.png) -80px -195px;
+}
+/*音量控制面板 隐藏部分*/
+.bot_right .volume_panel{
+	display: none;
+	margin-left: -5px;
+	margin-top: -115px;
+	width: 29px;
+	height: 114px;
+	background: url(../歌曲播放Img/volume-panel.png) no-repeat;
+	z-index: 100;
+	position: absolute;
+}
+.panel_control{
+	cursor: pointer;
+	position: absolute;
+	left: 12px;
+	top: 11px;
+	width: 5px;
+	height: 90px;
+}
+.panel_bottom{
+	width: 3px;
+	height: 2px;
+	display: block;
+	cursor: pointer;
+    background:url(../歌曲播放Img/btn.png) -584px -425px;
+	position: absolute;
+	left: 1px;
+	top: 78px;
+}
+.vol_bar{
+	cursor: pointer;
+	position: absolute;
+	left: 1px;
+	top: 2px;
+	width: 3px;
+	height: 86px;
+	overflow: hidden;
+}
+.panel_progress{
+	position: absolute;
+	left: 0px;
+	top: 41px;
+	width: 3px;
+	height: 86px;
+	background: url(../歌曲播放Img/volume_middle.png);
+	overflow: hidden;
+}
+.vol_head{
+	cursor: pointer;
+	position: absolute;
+	left: -2px;
+	top: -1px;
+	width: 9px;
+	height: 80px;
+}
+.panel_head{
+	position: absolute;
+	left: 0px;
+	width: 9px;
+	height: 9px;
+	top: 42.5375px;
+	background: url(../歌曲播放Img/btn.png) -242px -130px;
+}
+/*添加播放提示 隐藏部分*/
+.play_tips{
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	padding: 10px 0;
+	line-height: 30px;
+	bottom: 80px;
+	right: 100px;
+	color: #fff;
+	text-align: center;
+	background: url(../歌曲播放Img/paly_add.png) no-repeat left top;
+}
+/*播放模式*/
+.play_mode{
+	display: block;
+	cursor: pointer;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../歌曲播放Img/btn.png) no-repeat -64px -179px;
+	margin-left: 30px;
+	margin-top: 34px;
+}
+.play_mode:hover{
+	background: url(../歌曲播放Img/btn.png) no-repeat -80px -179px;
+}
+/*播放模式 隐藏部分*/
+.mode_panel{
+	position: absolute;
+	margin-left: -5px;
+	margin-top: -116px;
+	width: 100px;
+	padding: 10px;
+	height: 95px;
+	z-index: 100;
+	background: url(../歌曲播放Img/play_style.png) no-repeat left top;
+}
+.mode_panel li{
+	height: 30px;
+	width: 100px;
+	line-height: 30px;
+}
+.mode_panel li .mode_img1{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 7px 8px;
+	vertical-align: middle;
+	background: url(../歌曲播放Img/btn.png) no-repeat -96px -179px;
+}
+.mode_panel li .mode_img2{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 7px 8px;
+	vertical-align: middle;
+	background: url(../歌曲播放Img/btn.png) no-repeat 0 -179px;
+}
+.mode_panel li .mode_img3{
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 7px 8px;
+	vertical-align: middle;
+	background: url(../歌曲播放Img/btn.png) no-repeat -128px -179px;
+}
+.mode_panel li .mode_word{
+	color: #19b5f0;
+	line-height: 30px;
+	font-size: 13px;
+}
+.mode_panel li .mode_wordx{
+	color: #fff;
+	line-height: 30px;
+	font-size: 13px;
+}
+/*下载*/
+.pb_download{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background:  url(../歌曲播放Img/btn.png) no-repeat -240px -32px;
+	cursor: pointer;
+	position: absolute;
+	margin-left: 92px;
+	margin-top: 32.5px;
+}
+.pb_download:hover{
+	background:  url(../歌曲播放Img/btn.png) no-repeat -256px -32px;
+}
+/*分享*/
+.pb_share{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background:  url(../歌曲播放Img/btn.png) no-repeat -240px 0;
+	cursor: pointer;
+	position: absolute;
+	margin-left: 136px;
+	margin-top: 32.5px;
+}
+.pb_share:hover{
+	background:  url(../歌曲播放Img/btn.png) no-repeat -256px 0;
+}
+.list{
+	position: absolute;
+	display: block;
+	right: 10px;
+	top: 29px;
+	width: 60px;
+	height: 23px;
+	cursor: pointer;
+	background: url(../歌曲播放Img/btn.png) no-repeat 0 -120px;
+}
+.list_count{
+	margin-left: 30px;
+	color: #fff;
+	font-size: 13px;
+}
+.list:hover{
+	background: url(../歌曲播放Img/btn.png) no-repeat -61px -120px;
+}
+.list:hover .list_count{
+	color: #19b5f0;
+}
+/*播放列表 隐藏面板*/
+.mod-playlist{
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	right: 20px;
+	bottom: 80px;
+	z-index: 99;
+	width: 480px;
+	height: 410px;
+	color: #7c898e;
+}
+/*控制台展示按钮*/
+.bot_bot{
+	position: absolute;
+	margin-top: -96px;
+	right: 40px;
+	width: 26px;
+	height: 16px;
+}
+.bot_bot .bot1{
+	position: absolute;
+	width: 26px;
+	height: 16px;
+	background: url(../歌曲播放Img/shbar.png) no-repeat;
+	opacity: 0.3;
+}
+.bot_bot .bot2{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	display: block;
+	cursor: pointer;
+	background: url(../歌曲播放Img/btn.png) no-repeat -140px -211px;
+}
+.bot_bot .bot2:hover{
+	background: url(../歌曲播放Img/btn.png) no-repeat -230px -211px;
+}
+#cover{
+	display:none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.5;
+	height: 2130px;
+	width: 1349px;
+	z-index: 10000 !important;
+}
+#notice{
+	display: none;
+	z-index: 10001 !important;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -133px;
+	margin-left: -220px;
+	width: 440px;
+	height: 378px;
+	background: #fff;
+	border-radius: 5px;
+	background: url(../downkodeImg/捕获.PNG) no-repeat;
+}
+#notice .close{
+	display: block;
+	float: right;
+	padding: 0;
+	margin: 5px 12px 0px 0px;
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+	outline: none;
+}
+#notice .notice_ok{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 180px;
+	height: 42px;
+	margin-left: 130px;
+	margin-top: 184px;
+}

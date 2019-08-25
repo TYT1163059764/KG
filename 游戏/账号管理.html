@@ -1,0 +1,456 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>酷狗游戏个人中心—大天使之剑传奇霸业混沌战域花千骨莽荒纪天书世界佛本是道七杀最新网页游戏最好玩的游戏最好玩的页游花千骨官网大天使之剑官网传奇霸业官网</title>
+<link rel="shortcut icon" href="playImg/favicon.ico.png" type="image/x-icon" />
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	a{
+		text-decoration: none;
+	}
+	#play_infoBox{
+		position: fixed;
+		top: 0;
+	  	width: 100%;
+		height:38px;
+		background:#f4f4f4;
+		border-bottom: 1px solid #eaeaea;
+		z-index: 9999;
+	}
+	#play_infoBox .tag1{
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+		position:absolute;
+		left:85px;
+		top:10px;
+	}
+	#play_infoBox .register{
+		font-size:14px;
+		width:103px;
+		height:37px;
+		position:absolute;
+		right:50px;
+		top:10px;
+	}
+	#play_infoBox .reg1{
+		width:45px;
+		height:18px;
+		border-radius:3px;
+		border:1px solid #f66;
+		text-align: center;
+		background:#f66;
+		color:#fff;
+		float:left;
+		margin-right:5px;
+		
+	}
+	#play_infoBox .reg2{
+		width:45px;
+		height:18px;
+		border-radius:3px;
+		border:1px solid #a6a6a6;
+		text-align: center;
+		color:#a6a6a6;
+		float:left;
+	}
+	#play_mainBox{
+		height:111px;
+		width: 100%;
+		position: fixed;
+		top: 38px;
+		z-index: 9999;
+		background: white;
+	}
+	#play_mainBox .logo{
+		width:160px;
+		height:49px;
+		background: url("playImg/mainBox.png") 0 -185px;
+		position:absolute;
+		left:110px;
+		top:28px;
+	}
+	#play_mainBox .combine{
+		width:419px;
+		height:37px;
+		border-radius:25px;
+		border:1px solid #a6a6a6;
+		position:absolute;
+		left:500px;
+		top:30px;
+		background: url("playImg/mainBox.png") no-repeat 0 -50px;
+	}
+	.inp{
+		width:302px;
+		height:36px;
+		position:absolute;
+		left:65px;
+		border:1px solid transparent;
+	}
+	.inp input{
+		width:276px;
+		height:34px;
+		border:1px solid transparent;
+		color:#a6a6a6;
+		font-size:14px;
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+		outline: none;  /*搜索框消失*/
+	}
+	.search{
+		width:55px;
+		height:37px;
+		background:url("playImg/mainBox.png");
+		background-position: 0 -92px;
+		background-repeat: no-repeat;
+		position:absolute;
+		right:0;
+	}
+	#play_hot{
+		position:absolute;
+		right:140px;
+		top:36px;
+	}
+	#play_hot span{
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+	}
+	#play_hot a{
+		color:#525252;
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+	}
+	#play_dirBox{
+		height:39px;
+		width: 100%;
+		border-bottom: 2px solid #f66;
+		position: fixed;
+		top: 149px;
+		z-index: 9999;
+		background: white;
+	}
+	.dirMid{
+		width:1200px;
+		height:26px;
+		margin:auto;
+	}
+	.dirMid .a0{
+		width:90px;
+		height:26px;
+		background: #f66;
+		border-radius:20px;
+		float: left;
+		margin-left: 20px;
+		margin-right: 120px;
+		color:rgb(255, 255, 255);
+	}
+	.dirMid .a1{
+		width:82px;
+		height:26px;
+		border-radius:20px;
+		float: left;
+		margin-right: 120px;
+		color:rgb(0, 0, 0);
+		text-align: center;
+		line-height: 26px;
+		font-family: "微软雅黑", "Microsoft Yahei";
+		font-size: 16px;
+	}
+	.dirMid .a1:hover{
+		background: #f66;
+		color:rgb(255, 255, 255);
+	}
+	.dirMid .aimg{
+		width:15px;
+		height:16px;
+		background:url(playImg/mainBox.png);
+		background-position: 0 -165px;
+		float: left;
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+	.dirMid .a1:hover .aimg{
+		background:url(playImg/mainBox.png);
+		background-position: 0 -239px;
+	}
+	.dirMid span{
+		line-height: 26px;
+		float: left;
+		margin-left: 10px;
+	}	
+	
+	#contain{
+		width: 100%;
+		height: 959px;
+		position: relative;
+		top: 190px;
+		background-color: #f6f6f6;
+	}
+	#contain .bao_tou{
+		width: 100%;
+		height: 128px;
+		border-bottom: 1px solid #dfdede;
+		background-color: white;
+	}
+	#contain .bao_tou .tou{
+		width: 960px;
+		height: 128px;
+		margin-top: 58px;
+		margin-left: 210px;;
+	}
+	#contain .ti_shi{
+		width: 100%;
+		padding: 15px 0 10px;
+		color: #727170;
+		font-size: 24px;
+	}
+	#contain .btn{
+		display: inline-block;
+		width: 170px;
+		height: 51px;
+		background: url(playImg/logReg_btns_bg.jpg) no-repeat 0 0;
+		line-height: 51px;
+		text-align: center;
+		color: #fff;
+		font-size: 22px;
+	}
+	.body_con{
+		width: 960px;
+		height: 668px;
+		margin: 18px auto 86px;
+		background: url(playImg/tip.jpg);
+		position: relative;
+	}
+	.log{
+		display: inline-block;
+		position: absolute;
+		top: 462px;
+		left: 334px;
+		width: 300px;
+		height: 70px;
+		cursor: pointer;
+	}
+	
+	/*一键到顶*/
+	#scollTop{
+		width: 42px;
+		height: 73px;
+		display: block;
+		right: 180px;
+		margin-right: 0px;
+		bottom: 10px;
+		position:fixed;
+		cursor: pointer;
+		z-index: 999;
+	}
+	#scollTop a{
+		background: url(playImg/pic_elements.png) no-repeat  0 -933px;
+		display: block;
+		height: 73px;
+	}
+	/*底部*/
+	#play_last{
+		width: 100%;
+		height: 290px;
+		background: #5f5f5f;
+		position: relative;
+		top: 190px;
+	}
+	#play_last .last_mid{
+		width: 1200px;
+		height: 220px;
+		margin: auto;
+		padding-top: 20px;
+	}
+	.last_mid .mid1{
+		width: 1200px;
+		height: 78px;
+		border-top: 1px solid #777676;
+		border-bottom: 1px solid #777676;
+	}
+	.mid1 .mid_left{
+		width: 894px;
+		height: 37px;
+		float: left;
+		line-height: 37px;
+		padding: 16px 0;
+	}
+	.mid_left a{
+		margin-bottom: 10px;
+		color: #d2d2d2;
+		margin-right: 16px;
+		font-size: 12px;
+	}
+	.mid_left a:hover{
+		text-decoration-line: underline;
+	}
+	.mid1 .mid_right{
+		width: 286px;
+		height: 39px;
+		float: left;
+		line-height: 39px;
+		padding: 16px 0;
+	}
+	.mid_right span{
+		font-size: 18px;
+    	color: #f0efef;
+	}
+	.last_mid .mid2{
+		width: 1200px;
+		height: 148px;
+		padding-top: 32px;
+	}
+	.mid2 .mid2_box{
+		width: 980px;
+		height: 116px;
+		padding-left: 220px;
+	}
+	.mid2_box p{
+		width: 980px;
+		height: 17px;
+		font-size: 12px;
+		color: #afadad;
+		margin-bottom: 12px;
+	}
+	.mid2_box span{
+		margin-right: 30px;
+	}
+	.mid2_box a{
+		font-size: 12px;
+		color: #afadad;
+	}
+	.mid2_box a:hover{
+		text-decoration-line: underline;
+	}
+</style>
+</head>
+
+<body>
+	<div id="play_infoBox">
+		<span class="tag1">酷狗游戏，做最精品的游戏！</span>
+		<div class="register">
+			<a href=""><p class="reg1">登陆</p></a>
+			<a href="../注册.html"><p class="reg2">注册</p></a>
+		</div>
+	</div>
+	<div id="play_mainBox">
+		<a href="../首页/首页.html"><div class="logo"></div></a>
+		<div class="combine">
+			<p class="inp">
+				<input type="text" placeholder="请输入游戏名称" style="color:#a6a6a6;font-size: 12px"/>
+				<!--placeholder-->
+			</p>
+			<div class="search"></div>
+		</div>
+		<span id="play_hot">
+			<span>热门搜索：</span>
+			<a href="">神仙劫</a>
+			<a href="">传奇霸业</a>
+			<a href="">大天使之剑</a>
+			<a href="">锦衣夜行</a>
+		</span>
+	</div>
+	<div id="play_dirBox">
+		<div class="dirMid">
+			<a href="Play.html">
+				<div class="a1">
+					<div class="aimg"></div>
+					<span>首页</span>
+				</div>
+			</a>
+			<a href="">
+				<div class="a0">
+					<span>账号管理</span>
+				</div>
+			</a>
+			<a href="充值中心.html">
+				<div class="a1">
+					<span>充值中心</span>
+				</div>
+			</a>
+			<a href="游戏中心.html">
+				<div class="a1">
+					<span>游戏中心</span>
+				</div>
+			</a>
+			<a href="">
+				<div class="a1">
+					<span>游戏礼包</span>
+				</div>
+			</a>
+			<a href="../客服中心/客服中心.html">
+				<div class="a1" style="margin-right: 0px">
+					<span>客服中心</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+	<!--内容-->
+	<div id="contain">
+		<div class="bao_tou">
+			<div class="tou">
+				<div class="ti_shi">您还没有登录! 请登录您的个人账号！</div>
+				<a class="btn" href="">登陆</a>
+				<a class="btn" href="Play注册.html">注册</a>
+			</div>
+		</div>
+		<div class="body_con">
+			<a href="" class="log"></a>
+		</div>
+	</div>
+	
+	<!--回到顶部-->
+	<div id="scollTop">
+		<a href="#"></a>
+	</div>
+	<!--底部-->
+	<div id="play_last">
+		<div class="last_mid">
+			<div class="mid1">
+				<div class="mid_left">
+					<a href="">酷狗游戏</a>
+					<a href="">关于我们</a>
+					<a href="">家长关护工程</a>
+					<a href="">账户安全指南</a>
+				</div>
+				<div class="mid_right">
+					<span>客服热线：010-80121898</span>
+				</div>
+			</div>
+			<div class="mid2">
+				<div class="mid2_box">
+					<p>
+						健康游戏忠告 ：
+						<span>抵制不良游戏</span>
+						<span>拒绝盗版游戏</span>
+						<span>注意自我保护</span>
+						<span>谨防受骗上当</span>
+						<span>适度游戏益脑</span>
+						<span>沉迷游戏伤身</span>
+						<span>合理安排时间</span>
+						<span>享受健康生活</span>
+					</p>
+					<p>
+						<span>文化部网络游戏举报和联系电子邮箱：<a href="">wlwh@vip.sina.com</a></span>
+						<span>纠纷处理方式：联系客服或依<a href="">《趣酷服务条款》</a>约定方式处理</span>
+					</p>
+					<p>
+						<span>广州乐畅软件科技有限公司粤网文[2010]175号 <a href="">粤ICP备09017694号-2</a></span>
+						<span>增值电信经营许可证粤B2-20060339 </span>
+					</p>
+					<p>
+						<span>Copyright © 2004-2016 LeChang. All Rights Reserved.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

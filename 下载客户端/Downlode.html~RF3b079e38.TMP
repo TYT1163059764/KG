@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>酷狗音乐——下载客户端</title>
+<link rel="stylesheet" type="text/css" href="downlodeCss/downlode.css" />
+</head>
+
+<body>
+	<div id="topbanner">
+		<a href="" class="top_logo"></a>
+		<div class="search">
+			<input type="text"/>
+		</div>
+		<div class="top_right">
+			<ul>
+				<li><a href="A.源辰/一期项目/客服中心/客服中心.html">客服中心</a></li>
+				<li><a href="">招贤纳士</a></li>
+				<li><a href="">会员中心</a></li>
+			</ul>
+			<div class="reg">
+				<a href="" class="a1">登陆</a>
+				<a href="" class="a2">注册</a>
+			</div>
+		</div>
+	</div>
+	<div id="dirBox">
+		<ul class="dir_left">
+			<li class="dir_aa"><a href="">首页</a></li>
+			<li class="dir_aa"><a href="">榜单</a></li>
+			<li class="dir_down"><a href="">下载客户端</a></li>
+			<li class="dir_more"><a href="">更多</a></li>
+		</ul>
+		<ul class="dir_hind">
+			<li><a href="">电台</a></li>
+			<li><a href="">MV</a></li>
+			<li><a href="">歌单</a></li>
+			<li><a href="">歌手</a></li>
+		</ul>
+		<ul class="dir_right">
+			<li style="margin-left: 30px"><a href="" class="r1">&nbsp;&nbsp;&nbsp;&nbsp;音乐直播</a></li>
+			<li style="margin-left: 30px"><a href="" class="r2">&nbsp;&nbsp;&nbsp;&nbsp;酷狗LIVE</a></li>
+			<li style="margin-left: 30px"><a href="" class="r3">&nbsp;&nbsp;&nbsp;&nbsp;音乐人</a></li>
+			<li style="margin-left: 17px"><a href="" class="r4">&nbsp;&nbsp;&nbsp;&nbsp;游戏</a></li>
+			<li style="width: 46px;float: right"><a href="" class="r5">&nbsp;&nbsp;&nbsp;&nbsp;商城</a></li>
+		</ul>
+	</div>
+	<div id="local">
+		<span class="local">我的位置：</span>
+		<a href="">首页</a> >
+		<a href="">下载客户端</a>
+	</div>
+	<!--内容部分-->
+	<div id="con1">
+		<div class="con1_mid">
+			<div class="mid1">
+				<p class="mid_copyright">v 8.8.24</p>
+				<a href=""><div class="mid1_pic"></div></a>
+				<p class="mid_copyrightx"><a href="">酷狗PC版</a></p>
+				<p class="mid_date">更新日期：2018.05.22</p>
+				<a href="" class="mid_down">
+					<i></i>
+					<span>立即下载</span>
+				</a>
+			</div>
+			<div class="mid2">
+				<p class="mid_copyright">v 8.8.24</p>
+				<a href=""><div class="mid2_pic"></div></a>
+				<p class="mid_copyrightx"><a href="" style="left: 105px">酷狗Android版</a></p>
+				<p class="mid_date">更新日期：2018.05.22</p>
+				<a href="" class="mid_down">
+					<i></i>
+					<span>立即下载</span>
+				</a>
+			</div>
+			<div class="mid3">
+				<p class="mid_copyright">v 8.8.24</p>
+				<a href=""><div class="mid3_pic"></div></a>
+				<p class="mid_copyrightx"><a href="" style="left: 110px">酷狗iPhone版</a></p>
+				<p class="mid_date">更新日期：2018.05.22</p>
+				<a href="" class="mid_down">
+					<i></i>
+					<span>立即下载</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="con2">
+		<div class="con2_mid">
+			<div class="xmid1">
+				<a href=""><div class="xmid1_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid2">
+				<a href=""><div class="xmid2_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid3">
+				<a href=""><div class="xmid3_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid4">
+				<a href=""><div class="xmid4_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid5">
+				<a href=""><div class="xmid5_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid6">
+				<a href=""><div class="xmid6_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid7">
+				<a href=""><div class="xmid7_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid8">
+				<a href=""><div class="xmid8_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid9">
+				<a href=""><div class="xmid9_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid10">
+				<a href=""><div class="xmid10_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid11">
+				<a href=""><div class="xmid11_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid12">
+				<a href=""><div class="xmid12_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid13">
+				<a href=""><div class="xmid13_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+			<div class="xmid14">
+				<a href=""><div class="xmid14_pic"></div></a>
+				<div class="xmid_right">
+					<p class="name">VIPER HiFi</p>
+					<p class="num">更新日期：2018.02.02</p>
+					<a href="">下载</a>
+					<p class="num" style="margin-top: 15px">V 1.0.20</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--底部-->
+	<div id="bottom">
+		<div class="footer">
+			<div class="links">
+				<a href="">关于酷狗</a>|
+				<a href="">监督举报</a>|
+				<a href="">广告服务</a>|
+				<a href="">版权指引</a>|
+				<a href="">隐私政策</a>|
+				<a href="">用户服务协议</a>|
+				<a href="">推广合作</a>|
+				<a href="">酷狗音乐人</a>|
+				<a href="">酷狗音乐推</a>|
+				<a href="">招聘信息</a>|
+				<a href="">客服中心</a>|
+				<a href="">用户体验提升计划</a>
+			</div>
+			<div class="copyright">
+				<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+				<p>信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339 &nbsp;&nbsp;&nbsp;
+				<a target="_blank" href="">粤ICP备09017694号-2</a>
+				<span class="footerIcon"><a target="_blank" href="">&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+				</p>
+				<p>广播电视节目制作经营许可证（粤）字第01270号&nbsp;&nbsp;&nbsp;&nbsp;营业性演出许可证穗天演440106026</p>
+				<p>穗公网监备案证第44010650010167&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证编号（粤）-非经营性-2012-0018<a  href="">&nbsp;&nbsp;&nbsp;<span>粤公网安备 44010602000141号</span><img src="downkodeImg/icon_yuewangga1.png" width="16" height="16"></a></p>
+				<p>不良信息举报邮箱：jubao_music@kugou.net&nbsp;&nbsp;&nbsp;&nbsp;客服邮箱：cs@kugou.com</p>
+				<p>Copyright&nbsp;&nbsp;&nbsp;&nbsp;2004-2018 KuGou-Inc.All Rights Reserved
+					<a class="office-verification" href="" target="_blank"></a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="downlodeJS/downlode.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

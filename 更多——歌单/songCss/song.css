@@ -1,0 +1,486 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+a:hover{
+	color: #6fcef4;
+}
+li{
+	list-style: none;
+}
+/*头*/
+#topbanner{
+	width: 1000px;
+	height: 78px;
+	margin: auto;
+	position: relative;
+}
+#topbanner .top_logo{
+	display: inline-block;
+	width: 153px;
+	height: 37px;
+	background: url(../songImg/logo.png);
+	margin-top: 20px;
+}
+#topbanner .search{
+	width: 298px;
+	height: 34px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 20px;
+	left: 180px;
+}
+#topbanner input{
+	width: 249px;
+	height: 24px;
+	border: none;
+	outline: none;  /*搜索框消失*/
+	margin-left: 14px;
+	padding: 5px 0px 5px 0px;
+	color: #666;
+	font: 13px/1.5 微软雅黑,simsun,sans-serif;
+}
+#topbanner .top_right{
+	width: 402px;
+	height: 25px;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+}
+.top_right ul{
+	width: 262px;
+	height: 20px;
+	border-right: 1px solid #e6e6e6;
+}
+.top_right li{
+	float: left;
+	padding: 0px 15px;
+}
+.top_right li a{
+	color:  #777;
+	font: 13px/1.5 Microsoft YaHei,微软雅黑,simsun,sans-serif;
+	font-weight: 500;
+}
+.top_right li a:hover{
+	color: #0c8ed9;
+}
+.top_right .reg{
+	width: 110px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+}
+.top_right .reg .a1{
+	display: inline-block;
+	width: 48px;
+	height: 28px;
+	border: 1px solid #169af3;
+	background-color: #169af3;
+	border-radius: 2px;
+	color: #fff;
+	font: 13px/1.5 Microsoft YaHei,微软雅黑,simsun,sans-serif;
+	line-height: 28px;
+	text-align: center;
+}
+.top_right .reg .a2{
+	display: inline-block;
+	width: 48px;
+	height: 28px;
+	border-radius: 2px;
+	color: #777;
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	font: 13px/1.5 Microsoft YaHei,微软雅黑,simsun,sans-serif;
+	line-height: 28px;
+	text-align: center;
+}
+.top_right .reg .a1:hover{
+	background: #0c8ed9;
+}
+.top_right .reg .a2:hover{
+	color: #169af3;
+	border: 1px solid #169af3;
+}
+#dirBox{
+	width: 100%;
+	height: 55px;
+	background: #2c323b;
+	position: relative;
+}
+#dirBox .dir_left{
+	width: 437px;
+	height: 55px;
+	position: absolute;
+	left: 180px;
+}
+.dir_left .dir_aa{
+	float: left;
+	width: 92px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.dir_left .dir_aa a{
+	font-size: 16px;
+	color: #ddd;
+}
+.dir_left .dir_down{
+	float: left;
+	width: 140px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.dir_left .dir_down a{
+	color: #ddd;
+	font-size: 16px;
+}
+.dir_left .dir_down:hover{
+	background: #0c8ed9;
+}
+.dir_left .dir_down:hover a{
+	color: #fff;
+}
+.dir_left .dir_more{
+	float: left;
+	width: 113px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.dir_left .dir_more a{
+	display: inline-block;
+	width: 92px;
+	height: 22px;
+	color: #ddd;
+	font-size: 16px;
+	background: url(../songImg/arrowMored.png) no-repeat 72px 8px;;
+	line-height: 22px;
+}
+.dir_left .dir_more:hover{
+	background: #0c8ed9;
+}
+.dir_left .dir_more:hover a{
+	color: #fff;
+}
+.dir_left .dir_more:hover a{
+	background: url(../songImg/arrowMoreu.png) no-repeat 72px 8px;
+}
+/*更多盒子隐藏部分*/
+#dirBox .dir_hind{
+	position: absolute;
+	left: 504px;
+	top: 55px;
+	display: none;
+	width: 113px;
+	height: 146px;
+	background-color: #252a32;
+	z-index: 99;
+}
+.dir_hind li{
+	display:block;
+	padding: 0;
+	height: 36px;
+	line-height: 36px;
+	float: none;
+	margin: 0;
+	width: 113px;
+	text-align: center;
+	cursor: pointer;
+}
+.dir_hind li:hover{
+	background-color: #2d343d;
+	border-top: 1px solid #383d44;
+}
+.dir_hind li a{
+	text-align: center;
+	font-size: 15px;
+	color: #bbb;
+	background: 0 0;
+	background-color: #252b34;
+	display: block;
+}
+
+.dir_hind li:hover a{
+	color: #fff;
+	background-color: #2d343d;
+}
+
+#dirBox .dir_right{
+	width: 445px;
+	height: 55px;
+	position: absolute;
+	right: 180px;
+}
+.dir_right li{
+	float: left;
+}
+.dir_right .r1{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../songImg/sprite.png) 0 -119px no-repeat;
+}
+.dir_right .r2{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../songImg/sprite.png) 0 -155px no-repeat;
+}
+.dir_right .r3{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../songImg/sprite.png) 0 -191px no-repeat;
+}
+.dir_right .r4{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../songImg/sprite.png) 0 -226px no-repeat;
+}
+.dir_right .r5{
+	display: inline-block;
+	width: 72px;
+	height: 18px;
+	margin-top: 18px;
+	font-size: 13px;
+	color: #bbb;
+	background: url(../songImg/sprite.png) 0 -281px no-repeat;
+}
+.dir_right .r1:hover{
+	background: url(../songImg/sprite.png) 0 -101px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r2:hover{
+	background: url(../songImg/sprite.png) 0 -137px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r3:hover{
+	background: url(../songImg/sprite.png) 0 -173px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r4:hover{
+	background: url(../songImg/sprite.png) 0 -208px no-repeat;
+	color: #14a9ff;
+}
+.dir_right .r5:hover{
+	background: url(../songImg/sprite.png) 0 -245px no-repeat;
+	color: #14a9ff;
+}
+#con{
+	width: 1000px;
+	height: 1350px;
+	margin: auto;
+}
+/*菜单*/
+#con .menu{
+	width: 210px;
+	height: 235px;
+	margin-top: 20px;
+	float: left;
+}
+.menu .menu1,.menu2{
+	width: 210px;
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: 18px;
+	text-align: center;
+}
+.menu1{
+	background: #169af3;
+}
+.menu1 a{
+	font-size: 14px;
+	color: #fff;
+}
+.menu2 a{
+	font-size: 14px;
+	color: #555;
+}
+/*歌单*/
+#con .song{
+	width: 770px;
+	height: 1000px;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: right;
+}
+.song li{
+	width: 770px;
+	height: 140px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.song img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-left: 4px;
+	margin-top: 3px;
+}
+.song .picc{
+	display: inline-block;
+	width: 108px;
+	height: 115px;
+	background: url(../songImg/other.png) no-repeat -119px -407px;
+	float: left;
+	margin-top: 10px;
+}
+.song .picc:hover{
+	background-position: -2px -408px;
+}
+.detail{
+	width: 650px;
+	height: 106px;
+	float: right;
+	margin-top: 10px;
+}
+.detail em{
+	color: #333;
+	font-style: normal;
+	display: inline;
+	float: right;
+	font-size: 14px;
+	color: #000;
+}
+.detail p{
+	width: 637px;
+	height: 40px;
+	color: #999;
+	font-size: 14px;
+	margin: 6px 13px 6px 0;
+	overflow: hidden;
+}
+.detail button{
+	width: 105px;
+	height: 28px;
+	background: #169af3;
+	border: 0px solid #169af3;
+	font-size: 12px;
+	color: #fff;
+	line-height: 28px;
+	position: relative;
+	border-radius: 2px;
+}
+.detail button:hover{
+	background: #0c8ed9;
+}
+.detail .all{
+	display: inline-block;
+	width: 9px;
+	height: 12px;
+	background: url(../songImg/icon_splice.png) -570px -90px;
+	margin-right: 5px;
+	position: absolute;
+	top: 8px;
+}
+.detail .shore{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../songImg/icon_splice.png) -300px -90px;
+	margin-right: 5px;
+	position: absolute;
+	top: 6px;
+}
+.song .sm{
+	width: 770px;
+	height: 120px;
+	position: relative;
+}
+.sm span{
+	width: 212px;
+	height: 22px;
+	position: absolute;
+	top: 60px;
+	left: 225px;
+	font-size: 16px;
+	color: #666;
+}
+.sm a{
+	display: inline-block;
+	width: 108px;
+	height: 36px;
+	background: #169af3;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 3px;
+	line-height: 36px;
+	text-align: center;
+	position: absolute;
+	top: 55px;
+	left: 460px;
+}
+.sm a:hover{
+	background: #0c8ed9;
+}
+/*底部*/
+#bottom{
+	width: 100%;
+	height: 319px;
+	background: #2c323b;
+	margin-top: -60px;
+}
+#bottom .footer{
+	padding-bottom: 50px;
+}
+.footer .links{
+	position: relative;
+	border-bottom: 1px solid #3d424a;
+	padding: 15px 0;
+	font-size: 12px;
+	color: #b1b3b9;
+	text-align: center;
+	height: 20px;
+}
+.footer .links a{
+	color: #b1b3b9;
+   	padding: 10px;
+}
+.footer .links a:hover{
+	color: #0090e2;
+}
+.footer .copyright{
+	width: 1000px;
+	height: 180px;
+	margin: 40px auto 0;
+}
+.copyright .footerIcon{
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	margin-top: -2px;
+	background: url(../songImg/footer_icon.png) no-repeat 0 0;
+}
+.copyright .office-verification{
+	margin-left: 5px;
+	padding: 5px 10px;
+	background: url(../songImg/logo_down.png) no-repeat 0 0;
+}
+.copyright p{
+	line-height: 30px;
+	text-align: center;
+	color: #b1b3b9;
+	font-size: 14px;
+}
+.copyright a{
+	color: #999;
+}

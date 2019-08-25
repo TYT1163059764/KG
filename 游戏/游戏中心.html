@@ -1,0 +1,720 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>酷狗游戏个人中心—大天使之剑传奇霸业混沌战域花千骨莽荒纪天书世界佛本是道七杀最新网页游戏最好玩的游戏最好玩的页游花千骨官网大天使之剑官网传奇霸业官网</title>
+<link rel="shortcut icon" href="playImg/favicon.ico.png" type="image/x-icon" />
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	a{
+		text-decoration: none;
+	}
+	#play_infoBox{
+		position: fixed;
+		top: 0;
+	  	width: 100%;
+		height:38px;
+		background:#f4f4f4;
+		border-bottom: 1px solid #eaeaea;
+		z-index: 9999;
+	}
+	#play_infoBox .tag1{
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+		position:absolute;
+		left:85px;
+		top:10px;
+	}
+	#play_infoBox .register{
+		font-size:14px;
+		width:103px;
+		height:37px;
+		position:absolute;
+		right:50px;
+		top:10px;
+	}
+	#play_infoBox .reg1{
+		width:45px;
+		height:18px;
+		border-radius:3px;
+		border:1px solid #f66;
+		text-align: center;
+		background:#f66;
+		color:#fff;
+		float:left;
+		margin-right:5px;
+		
+	}
+	#play_infoBox .reg2{
+		width:45px;
+		height:18px;
+		border-radius:3px;
+		border:1px solid #a6a6a6;
+		text-align: center;
+		color:#a6a6a6;
+		float:left;
+	}
+	#play_mainBox{
+		height:111px;
+		width: 100%;
+		position: fixed;
+		top: 38px;
+		z-index: 9999;
+		background: white;
+	}
+	#play_mainBox .logo{
+		width:160px;
+		height:49px;
+		background: url("playImg/mainBox.png") 0 -185px;
+		position:absolute;
+		left:110px;
+		top:28px;
+	}
+	#play_mainBox .combine{
+		width:419px;
+		height:37px;
+		border-radius:25px;
+		border:1px solid #a6a6a6;
+		position:absolute;
+		left:500px;
+		top:30px;
+		background: url("playImg/mainBox.png") no-repeat 0 -50px;
+	}
+	.inp{
+		width:302px;
+		height:36px;
+		position:absolute;
+		left:65px;
+		border:1px solid transparent;
+	}
+	.inp input{
+		width:276px;
+		height:34px;
+		border:1px solid transparent;
+		color:#a6a6a6;
+		font-size:14px;
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+		outline: none;  /*搜索框消失*/
+	}
+	.search{
+		width:55px;
+		height:37px;
+		background:url("playImg/mainBox.png");
+		background-position: 0 -92px;
+		background-repeat: no-repeat;
+		position:absolute;
+		right:0;
+	}
+	#play_hot{
+		position:absolute;
+		right:140px;
+		top:36px;
+	}
+	#play_hot span{
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+	}
+	#play_hot a{
+		color:#525252;
+		font-family: "微软雅黑","Microsoft Yahei";
+		font-size: 12px;
+	}
+	#play_dirBox{
+		height:39px;
+		width: 100%;
+		border-bottom: 2px solid #f66;
+		position: fixed;
+		top: 149px;
+		z-index: 9999;
+		background: white;
+	}
+	.dirMid{
+		width:1200px;
+		height:26px;
+		margin:auto;
+	}
+	.dirMid .a0{
+		width:90px;
+		height:26px;
+		background: #f66;
+		border-radius:20px;
+		float: left;
+		margin-left: 20px;
+		margin-right: 120px;
+		color:rgb(255, 255, 255);
+	}
+	.dirMid .a1{
+		width:82px;
+		height:26px;
+		border-radius:20px;
+		float: left;
+		margin-right: 120px;
+		color:rgb(0, 0, 0);
+		text-align: center;
+		line-height: 26px;
+		font-family: "微软雅黑", "Microsoft Yahei";
+		font-size: 16px;
+	}
+	.dirMid .a1:hover{
+		background: #f66;
+		color:rgb(255, 255, 255);
+	}
+	.dirMid .aimg{
+		width:15px;
+		height:16px;
+		background:url(playImg/mainBox.png);
+		background-position: 0 -165px;
+		float: left;
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+	.dirMid .a1:hover .aimg{
+		background:url(playImg/mainBox.png);
+		background-position: 0 -239px;
+	}
+	.dirMid span{
+		line-height: 26px;
+		float: left;
+		margin-left: 10px;
+	}	
+	/*内容首部*/
+	#head_con{
+		width: 100%;
+		height: 276px;
+		position: relative;
+		top: 190px;
+		background-color: #f6f6f6;
+	}
+	.head_mid{
+		width:1002px;
+		height:231px;
+		margin:auto;
+		padding-top:45px;
+		position:relative;
+	}
+	.left{
+		display:inline-block;
+		width:21px;
+		height:231px;
+		background: #adadad none repeat scroll 0 0;
+		position:absolute;	
+	}
+	.left i{
+		display:inline-block;
+		width:6px;
+		height:10px;
+		background:url(playImg/pic_elements.png);
+		position:absolute;
+		top:110px;
+		left:8px;
+	}
+	.right{
+		display:inline-block;
+		width:21px;
+		height:231px;
+		background: #adadad none repeat scroll 0 0;
+		position:absolute;
+		right:0;	
+	}
+	.right i{
+		display:inline-block;
+		width:6px;
+		height:10px;
+		background:url(playImg/pic_elements.png)0 -10px;
+		position:absolute;
+		top:110px;
+		left:8px;
+	}
+	.qq{
+		width:960px;
+		height:231px;
+		position:absolute;
+		left:21px;	
+		overflow:hidden;
+	}
+	.mid_scoll{
+		width:1920px;
+		height:228px;
+		position:absolute;	
+		overflow:hidden;
+	}
+	.scoll{
+		width:317px;
+		height:229px;
+		border: 1px solid #dcdcdc;
+		float:left;
+		margin-left:1px;
+		position:relative;		
+	}
+	.scoll_img1{
+		width:317px;
+		height:160px;
+		background:url(playImg/279d7728aa5b057c2786fd2e3d724dd5.jpg);
+		float:left;
+		z-index:1;
+	}
+	.scoll_img2{
+		width:317px;
+		height:160px;
+		background:url(playImg/4d604fe5d3a95c6d4b8de8416edd80fe.jpg);
+		float:left;
+		z-index:1;
+	}
+	.scoll_img3{
+		width:317px;
+		height:160px;
+		background:url(playImg/82cfc554fba32bf33dfa19a5fe074b49.jpg);
+		float:left;
+		z-index:1;
+	}
+	.scoll_img4{
+		width:317px;
+		height:160px;
+		background:url(playImg/4511160816e8dcd28a3187b2199d4263.jpg);
+		float:left;
+		z-index:1;
+	}
+	.scoll_img5{
+		width:317px;
+		height:160px;
+		background:url(playImg/2b2d8391387d8be324470bca9b84b49f.jpg);
+		float:left;
+		z-index:1;
+	}
+	.scoll_img6{
+		width:317px;
+		height:160px;
+		background:url(playImg/2b2d8391387d8be324470bca9b84b49f.jpg);
+		float:left;
+		z-index:1;
+		
+	}
+	.img_txt{
+		width:317px;
+		height:68px;
+		position:absolute;
+		bottom:0;
+		background:white;
+	}
+	.img_txt span{
+		color: #999;
+		font-size:12px;
+		display:inline-block;
+		margin-left:20px;	
+		margin-top:15px;
+	}
+	.img_txt a{
+		display:inline-block;
+		width:73px;
+		height:28px;
+		color: #fff;
+		background:#F60;
+		border-radius:5px;
+		text-align:center;
+		line-height:31px;
+		float:right;
+		margin-right:20px;
+		margin-top:20px;
+		font-size:14px;
+	}
+	
+	#zhe_zhao1{
+		width:317px;
+		height:160px;	
+		background:#000;
+		opacity:0.5;
+		z-index:2;
+		position:absolute;
+		display:none;
+	}
+	#zhe_zhao2{
+		width:317px;
+		height:160px;	
+		background:#000;
+		opacity:0.5;
+		z-index:2;
+		position:absolute;
+		left:322px;
+		display:none;
+	}
+	#zhe_zhao3{
+		width:317px;
+		height:160px;	
+		background:#000;
+		opacity:0.5;
+		z-index:2;
+		position:absolute;
+		left:643px;
+		display:none;
+	}
+	.scoll .span1{
+		display:inline-block;
+		width:45px;
+		height:25px;
+		background:#f26d5d;
+		font-size16px;
+		color:#fff;
+		cursor:pointer;
+		line-height:25px;
+		text-align:center;
+		left:100px;
+		top:60px;
+		position:absolute;
+		z-index:9999;
+		display:none;
+	}
+	.scoll .span2{
+		display:inline-block;
+		width:45px;
+		height:25px;
+		background:#f26d5d;
+		font-size16px;
+		color:#fff;
+		cursor:pointer;
+		line-height:25px;
+		text-align:center;
+		left:158px;
+		top:60px;
+		position:absolute;
+		z-index:9999;
+		display:none;
+	}
+	.scoll span:hover{
+		color:#ffae45;
+	}
+	
+	
+	/*一键到顶*/
+	#scollTop{
+		width: 42px;
+		height: 73px;
+		display: block;
+		right: 180px;
+		margin-right: 0px;
+		bottom: 10px;
+		position:fixed;
+		cursor: pointer;
+		z-index: 999;
+	}
+	#scollTop a{
+		background: url(playImg/pic_elements.png) no-repeat  0 -933px;
+		display: block;
+		height: 73px;
+	}
+	/*底部*/
+	#play_last{
+		width: 100%;
+		height: 290px;
+		background: #5f5f5f;
+		position: relative;
+		top: 190px;
+	}
+	#play_last .last_mid{
+		width: 1200px;
+		height: 220px;
+		margin: auto;
+		padding-top: 20px;
+	}
+	.last_mid .mid1{
+		width: 1200px;
+		height: 78px;
+		border-top: 1px solid #777676;
+		border-bottom: 1px solid #777676;
+	}
+	.mid1 .mid_left{
+		width: 894px;
+		height: 37px;
+		float: left;
+		line-height: 37px;
+		padding: 16px 0;
+	}
+	.mid_left a{
+		margin-bottom: 10px;
+		color: #d2d2d2;
+		margin-right: 16px;
+		font-size: 12px;
+	}
+	.mid_left a:hover{
+		text-decoration-line: underline;
+	}
+	.mid1 .mid_right{
+		width: 286px;
+		height: 39px;
+		float: left;
+		line-height: 39px;
+		padding: 16px 0;
+	}
+	.mid_right span{
+		font-size: 18px;
+    	color: #f0efef;
+	}
+	.last_mid .mid2{
+		width: 1200px;
+		height: 148px;
+		padding-top: 32px;
+	}
+	.mid2 .mid2_box{
+		width: 980px;
+		height: 116px;
+		padding-left: 220px;
+	}
+	.mid2_box p{
+		width: 980px;
+		height: 17px;
+		font-size: 12px;
+		color: #afadad;
+		margin-bottom: 12px;
+	}
+	.mid2_box span{
+		margin-right: 30px;
+	}
+	.mid2_box a{
+		font-size: 12px;
+		color: #afadad;
+	}
+	.mid2_box a:hover{
+		text-decoration-line: underline;
+	}
+</style>
+</head>
+
+<body>
+	<div id="play_infoBox">
+		<span class="tag1">酷狗游戏，做最精品的游戏！</span>
+		<div class="register">
+			<a href=""><p class="reg1">登陆</p></a>
+			<a href="../注册.html"><p class="reg2">注册</p></a>
+		</div>
+	</div>
+	<div id="play_mainBox">
+		<a href="../首页/首页.html"><div class="logo"></div></a>
+		<div class="combine">
+			<p class="inp">
+				<input type="text" placeholder="请输入游戏名称" style="color:#a6a6a6;font-size: 12px"/>
+				<!--placeholder-->
+			</p>
+			<div class="search"></div>
+		</div>
+		<span id="play_hot">
+			<span>热门搜索：</span>
+			<a href="">神仙劫</a>
+			<a href="">传奇霸业</a>
+			<a href="">大天使之剑</a>
+			<a href="">锦衣夜行</a>
+		</span>
+	</div>
+	<div id="play_dirBox">
+		<div class="dirMid">
+			<a href="Play.html">
+				<div class="a1">
+					<div class="aimg"></div>
+					<span>首页</span>
+				</div>
+			</a>
+			<a href="账号管理.html">
+				<div class="a1">
+					<span>账号管理</span>
+				</div>
+			</a>
+			<a href="充值中心.html">
+				<div class="a1">
+					<span>充值中心</span>
+				</div>
+			</a>
+			<a href="">
+				<div class="a0">
+					<span>游戏中心</span>
+				</div>
+			</a>
+			<a href="">
+				<div class="a1">
+					<span>游戏礼包</span>
+				</div>
+			</a>
+			<a href="../客服中心/客服中心.html">
+				<div class="a1" style="margin-right: 0px">
+					<span>客服中心</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+	<!--内容-->
+	<div id="head_con">
+		<div class="head_mid">
+            <a href="" class="left">
+            	<i></i>
+            </a>
+            <a href="" class="right">
+            	<i></i>
+            </a>
+            
+            <div class="qq">
+            	<div class="mid_scoll">
+                	<div id="zhe_zhao1" class="zhe_zhao"></div>
+					
+                    <div class="scoll">
+						<span class="span1">官网</span>
+						<span class="span2">新服</span>
+                        <img class="scoll_img1"/>
+                        <div class="img_txt">
+                            <span>角色扮演</span>
+                            <a href="">开始游戏</a>
+                        </div>
+                    </div>
+                    <div id="zhe_zhao2" class="zhe_zhao"></div>
+					
+                    <div class="scoll">
+						<span class="span1">官网</span>
+						<span class="span2">新服</span>
+                        <img class="scoll_img2"/>
+                        <div class="img_txt">
+                            <span>角色扮演</span>
+                            <a href="">开始游戏</a>
+                        </div>
+                    </div>
+                    <div id="zhe_zhao3" class="zhe_zhao"></div>
+                    <div class="scoll">
+						<span class="span1">官网</span>
+						<span class="span2">新服</span>
+                        <img class="scoll_img3"/>
+                        <div class="img_txt">
+                            <span>角色扮演</span>
+                            <a href="">开始游戏</a>
+                        </div>
+                    </div>
+                    <div class="scoll">
+                        <img class="scoll_img4"/>
+                        <div class="img_txt">
+                            <span>角色扮演</span>
+                            <a href="">开始游戏</a>
+                        </div>
+                    </div>
+                    <div class="scoll">
+                        <img class="scoll_img5"/>
+                        <div class="img_txt">
+                            <span>角色扮演</span>
+                            <a href="">开始游戏</a>
+                        </div>
+                    </div>
+                    <div class="scoll">
+                        <img class="scoll_img6"/>
+                        <div class="img_txt">
+                            <span>角色扮演</span>
+                            <a href="">开始游戏</a>
+                        </div>
+                    </div>
+            	</div>
+        	</div>
+            
+		</div>
+	</div>
+	
+	<!--回到顶部-->
+	<div id="scollTop">
+		<a href="#"></a>
+	</div>
+	<!--底部-->
+	<div id="play_last">
+		<div class="last_mid">
+			<div class="mid1">
+				<div class="mid_left">
+					<a href="">酷狗游戏</a>
+					<a href="">关于我们</a>
+					<a href="">家长关护工程</a>
+					<a href="">账户安全指南</a>
+				</div>
+				<div class="mid_right">
+					<span>客服热线：010-80121898</span>
+				</div>
+			</div>
+			<div class="mid2">
+				<div class="mid2_box">
+					<p>
+						健康游戏忠告 ：
+						<span>抵制不良游戏</span>
+						<span>拒绝盗版游戏</span>
+						<span>注意自我保护</span>
+						<span>谨防受骗上当</span>
+						<span>适度游戏益脑</span>
+						<span>沉迷游戏伤身</span>
+						<span>合理安排时间</span>
+						<span>享受健康生活</span>
+					</p>
+					<p>
+						<span>文化部网络游戏举报和联系电子邮箱：<a href="">wlwh@vip.sina.com</a></span>
+						<span>纠纷处理方式：联系客服或依<a href="">《趣酷服务条款》</a>约定方式处理</span>
+					</p>
+					<p>
+						<span>广州乐畅软件科技有限公司粤网文[2010]175号 <a href="">粤ICP备09017694号-2</a></span>
+						<span>增值电信经营许可证粤B2-20060339 </span>
+					</p>
+					<p>
+						<span>Copyright © 2004-2016 LeChang. All Rights Reserved.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	
+	
+		//遮罩
+		var scoll=document.querySelectorAll(".scoll");
+		var zhezhao=document.querySelectorAll(".zhe_zhao");
+		
+		//var span1=document.querySelectorAll(".span1");
+		//var span2=document.querySelectorAll(".span2");
+		
+		for(let i=0;i<scoll.length;i++){
+			for(let j=0;j<zhezhao.length;j++){
+				scoll[i].onmouseover=function(){
+					zhezhao[i].style.display="inline-block";
+					//span1[z].style.display="inline-block";
+					//span2[x].style.display="inline-block";
+				}
+				scoll[i].onmouseout=function(){
+					zhezhao[i].style.display="none";
+					//span1[z].style.display="none";
+					//span2[x].style.display="none";
+				}
+				
+				setTimeout(function(){
+					zhezhao[i].onmouseover=function(){
+						this.style.display="inline-block";
+					}
+				},500)
+
+				zhezhao[i].onmouseout=function(){
+					clearTimeout();
+					this.style.display="none";
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		//跳转到最上面
+		window.onscroll=function(){
+			if(document.documentElement.scrollTop+document.body.scrollTop>300){
+				document.getElementById("scollTop").style.display="block";	
+			}
+			else{
+				document.getElementById("scollTop").style.display="none";
+			}
+		}
+		onscroll();
+	</script>
+</body>
+</html>
